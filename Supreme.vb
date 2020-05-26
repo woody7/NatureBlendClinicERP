@@ -7,8 +7,8 @@ Module Supreme
     Public ComplaintDisplayMode As String
     Public SelectedComplaintID As Integer
 
-    Public PastOcularDisplayMode As String
-    Public SelectedPastOcularID As Integer
+    Public PastMedicalDisplayMode As String
+    Public SelectedPastMedicalID As Integer
 
     Public OcularMotilityDisplayMode As String
     Public SelectedOcularMotilityID As Integer
@@ -47,5 +47,8 @@ Module Supreme
 
     Public VitalsDisplayMode As String
     Public VitalsID As String
+
+    Public HPIDisplayMode As String
+    Public HPIID As String
 
 End Module

@@ -96,6 +96,18 @@
     <Compile Include="Check_in_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Chief Complaint Grid.Designer.vb">
+      <DependentUpon>Chief Complaint Grid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chief Complaint Grid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chief Complaint.designer.vb">
+      <DependentUpon>Chief Complaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chief Complaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultation List.Designer.vb">
       <DependentUpon>Consultation List.vb</DependentUpon>
     </Compile>
@@ -107,6 +119,18 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HPI.Designer.vb">
+      <DependentUpon>HPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HPI_List.Designer.vb">
+      <DependentUpon>HPI_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HPI_List.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -123,6 +147,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Past Medical History.Designer.vb">
+      <DependentUpon>Past Medical History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Past Medical History.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Supreme.vb" />
     <Compile Include="Take Vitals.Designer.vb">
@@ -142,17 +172,32 @@
     <EmbeddedResource Include="Check_in_Form.resx">
       <DependentUpon>Check_in_Form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Chief Complaint Grid.resx">
+      <DependentUpon>Chief Complaint Grid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chief Complaint.resx">
+      <DependentUpon>Chief Complaint.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultation List.resx">
       <DependentUpon>Consultation List.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HPI.resx">
+      <DependentUpon>HPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HPI_List.resx">
+      <DependentUpon>HPI_List.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Past Medical History.resx">
+      <DependentUpon>Past Medical History.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Take Vitals.resx">
       <DependentUpon>Take Vitals.vb</DependentUpon>
