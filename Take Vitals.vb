@@ -17,7 +17,7 @@ Public Class Take_Vitals
         Dim Patient_Name As String
         Patient_Name = Specific_Extract_Table("MSMJ_Index", "vcmx1", "MSMJ_2", Patient_ID_Pub)
         Patient_Name_txt.Text = Patient_Name
-
+        Calc_BMI_Value_txt.Enabled = False
         Select Case VitalsDisplayMode
 
             Case "Add"
@@ -284,5 +284,20 @@ command.ExecuteReader()
     Private Sub History_btn_Click(sender As System.Object, e As System.EventArgs) Handles History_btn.Click
         'Dim Vit_List As New Vitals_List
         'Vit_List.Show()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim BMI As Decimal
+        Dim WeightforBMI As Decimal
+
+        WeightforBMI = Weight_Value_txt.Value
+
+        Dim HeightforBMI As Decimal
+
+        HeightforBMI = Height_value_txt.Value
+
+        BMI = WeightforBMI / (HeightforBMI * HeightforBMI)
+
+        Calc_BMI_Value_txt.Value = BMI
     End Sub
 End Class

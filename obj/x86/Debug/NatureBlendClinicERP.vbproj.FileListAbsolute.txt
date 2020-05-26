@@ -1,1 +1,19 @@
 C:\Users\nanak\onedrive\documents\visual studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe.config
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.pdb
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.xml
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\EnterpriseWrapping.dll
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\Total Accounting SDK.dll
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\EnterpriseFramework.dll
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbprojResolveAssemblyReference.cache
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Add_Patient.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Checked_In_Patients.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Check_in_Form.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_List.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Form1.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Resources.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Take_Vitals.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbproj.GenerateResource.Cache
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.exe
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.xml
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.pdb

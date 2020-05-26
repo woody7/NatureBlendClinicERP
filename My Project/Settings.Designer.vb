@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0B8VE78\WOODY2;Initial Catalog=EyeClinicERP;Integrated Securi"& _ 
-            "ty=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0B8VE78\WOODY2;Initial Catalog=NatureBlendClinicERP;Integrate"& _ 
+            "d Security=True")>  _
         Public ReadOnly Property Myconn() As String
             Get
                 Return CType(Me("Myconn"),String)

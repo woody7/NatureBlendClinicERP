@@ -30,14 +30,14 @@ Partial Class Take_Vitals
         Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Patient_Name_txt = New System.Windows.Forms.TextBox()
@@ -116,7 +116,7 @@ Partial Class Take_Vitals
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label13, 0, 9)
         Me.TableLayoutPanel1.Controls.Add(Me.Temperature_Value_txt, 1, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Label12, 0, 8)
@@ -154,23 +154,50 @@ Partial Class Take_Vitals
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(499, 515)
         Me.TableLayoutPanel1.TabIndex = 4
         '
-        'Label2
+        'Label13
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 100)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 17)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Height (cm)"
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(3, 450)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(191, 17)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = "Blood Oxygen Saturation (%)"
         '
-        'Label3
+        'Label12
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 150)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 17)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Weight (Kg)"
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(3, 400)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(159, 17)
+        Me.Label12.TabIndex = 6
+        Me.Label12.Text = "Blood Pressure (mmHg)"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(3, 350)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(155, 17)
+        Me.Label10.TabIndex = 5
+        Me.Label10.Text = "Respiratory Rate (/min)"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(3, 300)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(83, 17)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "Pulse (/min)"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(3, 250)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(113, 17)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Temperature (C)"
         '
         'LinkLabel1
         '
@@ -182,50 +209,23 @@ Partial Class Take_Vitals
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Calculated BMI"
         '
-        'Label4
+        'Label3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 250)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Temperature (C)"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(3, 150)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(83, 17)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Weight (Kg)"
         '
-        'Label7
+        'Label2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 300)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(83, 17)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Pulse (/min)"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 350)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(155, 17)
-        Me.Label10.TabIndex = 5
-        Me.Label10.Text = "Respiratory Rate (/min)"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(3, 400)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(159, 17)
-        Me.Label12.TabIndex = 6
-        Me.Label12.Text = "Blood Pressure (mmHg)"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(3, 450)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(191, 17)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = "Blood Oxygen Saturation (%)"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(3, 100)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(74, 17)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Height (m)"
         '
         'Label14
         '
