@@ -114,6 +114,12 @@
     <Compile Include="Consultation List.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Diagnosis_form.Designer.vb">
+      <DependentUpon>Diagnosis_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultation List.resx">
       <DependentUpon>Consultation List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis_form.resx">
+      <DependentUpon>Diagnosis_form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
