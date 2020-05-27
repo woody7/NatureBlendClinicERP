@@ -47,6 +47,9 @@ Public Class Consultation_Form
         CheckedinPatients_Grid.Columns(4).Name = "Check In Time"
 
         Load_Grid()
+
+        Patient_Name_txt.Text = Specific_Extract_Table("MSMJ_Index", "vcmx1", "MSMJ_2", Patient_ID_Pub)
+
     End Sub
 
     Private Sub Load_Grid()
@@ -105,5 +108,61 @@ Public Class Consultation_Form
 
 
 
+    End Sub
+
+    Private Sub General_Exam_btn_Click(sender As System.Object, e As System.EventArgs) Handles General_Exam_btn.Click
+
+        GenExamDisplayMode = "Add"
+
+        Dim Genexam As New General_Examination
+
+        TabControl1.TabPages.Add(Genexam)
+
+    End Sub
+
+    Function Specific_Extract_Table(ByVal reference_column As String, ByVal results_column As String, ByVal Table As String, ByVal RowID As Integer) As String
+        Dim info_value As String
+
+        Dim connectionString As String = My.Settings.Myconn
+
+
+        Dim queryString As String = _
+         "SELECT " & results_column & " from " & Table & " where " & reference_column & " = " & RowID.ToString
+
+        Using connection As New SqlConnection(connectionString)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+                    info_value = dataReader(0).ToString
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                'ShowException(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
+        Return info_value
+
+
+
+    End Function
+
+    Private Sub Refresh_btn_Click(sender As System.Object, e As System.EventArgs) Handles Refresh_btn.Click
+
+        CheckedinPatients_Grid.Rows.Clear()
+        Load_Grid()
     End Sub
 End Class

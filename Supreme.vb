@@ -51,4 +51,7 @@ Module Supreme
     Public HPIDisplayMode As String
     Public HPIID As String
 
+    Public GenExamDisplayMode As String
+    Public SelectedGenExamID As Integer
+
 End Module

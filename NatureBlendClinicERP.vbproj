@@ -136,6 +136,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="General Examination.Designer.vb">
+      <DependentUpon>General Examination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General Examination.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General_Examination_List.Designer.vb">
+      <DependentUpon>General_Examination_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General_Examination_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HPI.Designer.vb">
       <DependentUpon>HPI.vb</DependentUpon>
     </Compile>
@@ -216,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General Examination.resx">
+      <DependentUpon>General Examination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General_Examination_List.resx">
+      <DependentUpon>General_Examination_List.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HPI.resx">
       <DependentUpon>HPI.vb</DependentUpon>
