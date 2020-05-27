@@ -52,6 +52,9 @@
     <Reference Include="EnterpriseWrapping">
       <HintPath>..\..\..\..\GitHub\Eye-Clinic-ERP\Eye Clinic ERP\bin\Debug\EnterpriseWrapping.dll</HintPath>
     </Reference>
+    <Reference Include="MdiTabControl">
+      <HintPath>..\Tact1\MdiTabControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -114,6 +117,12 @@
     <Compile Include="Consultation List.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Consultation_Form.Designer.vb">
+      <DependentUpon>Consultation_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Diagnosis_form.Designer.vb">
       <DependentUpon>Diagnosis_form.vb</DependentUpon>
     </Compile>
@@ -154,6 +163,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Past Medical History List.Designer.vb">
+      <DependentUpon>Past Medical History List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Past Medical History List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Past Medical History.Designer.vb">
       <DependentUpon>Past Medical History.vb</DependentUpon>
     </Compile>
@@ -165,6 +180,12 @@
       <DependentUpon>Take Vitals.vb</DependentUpon>
     </Compile>
     <Compile Include="Take Vitals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitals_List.Designer.vb">
+      <DependentUpon>Vitals_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vitals_List.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -187,6 +208,9 @@
     <EmbeddedResource Include="Consultation List.resx">
       <DependentUpon>Consultation List.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultation_Form.resx">
+      <DependentUpon>Consultation_Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diagnosis_form.resx">
       <DependentUpon>Diagnosis_form.vb</DependentUpon>
     </EmbeddedResource>
@@ -205,11 +229,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Past Medical History List.resx">
+      <DependentUpon>Past Medical History List.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Past Medical History.resx">
       <DependentUpon>Past Medical History.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Take Vitals.resx">
       <DependentUpon>Take Vitals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vitals_List.resx">
+      <DependentUpon>Vitals_List.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

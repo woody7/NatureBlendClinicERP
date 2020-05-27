@@ -22,7 +22,7 @@ Public Class HPI
 
                 Using connection As New SqlConnection(My.Settings.Myconn)
                     Dim command As SqlCommand = connection.CreateCommand()
-                    command.CommandText = "SELECT dbo.MTM_1.MTM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.MTM_1.vcmx1, dbo.MTM_1.vc2, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.MSMJ_2.vcmx3, dbo.MTM_1.vcmx1, dbo.TDM_2.MTM_1 AS Expr1, dbo.MTM_1.vcmx3 AS Expr2, dbo.MTM_1.vcmx4 AS Expr3, dbo.MTM_1.date1 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_1.int1 where dbo.MTM_1.MTM_Index = " & HPIID
+                    command.CommandText = "SELECT dbo.MTM_1.MTM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.MTM_1.vcmx1, dbo.MTM_1.vc2, dbo.MSMJ_2.vcmx2 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_1.int1 where dbo.MTM_1.MTM_Index = " & HPIID
 
                     'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 
@@ -140,6 +140,13 @@ Public Class HPI
 
         MessageBox.Show("Added Successfully")
 
+
+        HPI_txt.Text = Nothing
+
     End Sub
 
+    Private Sub History_btn_Click(sender As System.Object, e As System.EventArgs) Handles History_btn.Click
+        Dim HPI_List As New HPI_List
+        HPI_List.Show()
+    End Sub
 End Class

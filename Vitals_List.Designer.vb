@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class HPI_List
+Partial Class Vitals_List
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,26 +22,22 @@ Partial Class HPI_List
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HPI_List))
-        Me.HPI_Grid = New System.Windows.Forms.DataGridView()
-        Me.Refresh_btn = New System.Windows.Forms.ToolStripButton()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Vitals_List))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        CType(Me.HPI_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Refresh_btn = New System.Windows.Forms.ToolStripButton()
+        Me.Vitals_Grid = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.Vitals_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'HPI_Grid
+        'ToolStrip1
         '
-        Me.HPI_Grid.AllowUserToAddRows = False
-        Me.HPI_Grid.AllowUserToDeleteRows = False
-        Me.HPI_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.HPI_Grid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.HPI_Grid.Location = New System.Drawing.Point(0, 27)
-        Me.HPI_Grid.Name = "HPI_Grid"
-        Me.HPI_Grid.RowTemplate.Height = 24
-        Me.HPI_Grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.HPI_Grid.Size = New System.Drawing.Size(955, 411)
-        Me.HPI_Grid.TabIndex = 1
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Refresh_btn})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(940, 27)
+        Me.ToolStrip1.TabIndex = 0
+        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'Refresh_btn
         '
@@ -52,32 +48,36 @@ Partial Class HPI_List
         Me.Refresh_btn.Size = New System.Drawing.Size(62, 24)
         Me.Refresh_btn.Text = "Refresh"
         '
-        'ToolStrip1
+        'Vitals_Grid
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Refresh_btn})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(955, 27)
-        Me.ToolStrip1.TabIndex = 0
-        Me.ToolStrip1.Text = "ToolStrip1"
+        Me.Vitals_Grid.AllowUserToAddRows = False
+        Me.Vitals_Grid.AllowUserToDeleteRows = False
+        Me.Vitals_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Vitals_Grid.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Vitals_Grid.Location = New System.Drawing.Point(0, 27)
+        Me.Vitals_Grid.Name = "Vitals_Grid"
+        Me.Vitals_Grid.RowTemplate.Height = 24
+        Me.Vitals_Grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.Vitals_Grid.Size = New System.Drawing.Size(940, 470)
+        Me.Vitals_Grid.TabIndex = 1
         '
-        'HPI_List
+        'Vitals_List
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(955, 438)
-        Me.Controls.Add(Me.HPI_Grid)
+        Me.ClientSize = New System.Drawing.Size(940, 497)
+        Me.Controls.Add(Me.Vitals_Grid)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Name = "HPI_List"
-        Me.Text = "HPI_List"
-        CType(Me.HPI_Grid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Name = "Vitals_List"
+        Me.Text = "Vitals_List"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.Vitals_Grid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents HPI_Grid As System.Windows.Forms.DataGridView
-    Friend WithEvents Refresh_btn As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
+    Friend WithEvents Refresh_btn As System.Windows.Forms.ToolStripButton
+    Friend WithEvents Vitals_Grid As System.Windows.Forms.DataGridView
 End Class

@@ -17,3 +17,13 @@ C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicE
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.exe
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.xml
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.pdb
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint_Grid.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Diagnosis_form.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI_List.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Ocular_History.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\MdiTabControl.dll
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_Form.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Vitals_List.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Medical_History_List.resources

@@ -88,8 +88,8 @@ Public Class Consultation_List
         Patient_ID_Pub = Consultation_Grid.Item(1, Consultation_Grid.SelectedCells(0).RowIndex).Value()
         Check_IN_Pub = Consultation_Grid.Item(9, Consultation_Grid.SelectedCells(0).RowIndex).Value()
 
-        'Dim Consult As New Consultation_Form
-        'Consult.Show()
+        Dim Consult As New Consultation_Form
+        Consult.Show()
     End Sub
 
     Private Sub Refresh_btn_Click(sender As System.Object, e As System.EventArgs) Handles Refresh_btn.Click
@@ -105,8 +105,8 @@ Public Class Consultation_List
         Check_IN_Pub = Consultation_Grid.Item(9, Consultation_Grid.SelectedCells(0).RowIndex).Value()
 
 
-        'Dim Consult As New Consultation_Form
-        'Consult.Show()
+        Dim Consult As New Consultation_Form
+        Consult.Show()
 
     End Sub
 End Class

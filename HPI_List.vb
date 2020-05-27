@@ -57,7 +57,7 @@ Public Class HPI_List
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.MTM_1.MTM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.MTM_1.vc1, dbo.MTM_1.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.MTM_1.date1, dbo.MTM_2.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_2 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_2.int1 WHERE (dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub & ")"
+            command.CommandText = "SELECT dbo.MTM_1.MTM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.MTM_1.vc1, dbo.MTM_1.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.MTM_1.date1, dbo.MTM_1.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_1.int1 WHERE (dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub & ")"
 
             'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 
@@ -81,6 +81,24 @@ Public Class HPI_List
 
             connection.Close()
         End Using
+
+    End Sub
+
+    Private Sub Refresh_btn_Click(sender As System.Object, e As System.EventArgs)
+        HPI_Grid.Rows.Clear()
+        Load_Grid()
+    End Sub
+
+
+    Private Sub HPI_List_DoubleClick(sender As Object, e As System.EventArgs) Handles HPI_Grid.DoubleClick
+        '   MessageBox.Show(ChiefComplaint_Grid.Item(0, ChiefComplaint_Grid.SelectedCells(0).RowIndex).Value())
+        HPIID = HPI_Grid.Item(0, HPI_Grid.SelectedCells(0).RowIndex).Value()
+
+        HPIDisplayMode = "View"
+
+        Dim HPI As New HPI
+        HPI.ShowDialog()
+
 
     End Sub
 End Class

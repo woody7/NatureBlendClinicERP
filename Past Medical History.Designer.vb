@@ -24,17 +24,17 @@ Partial Class Past_Ocular_History
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Past_Ocular_History))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Medications_txt = New System.Windows.Forms.TextBox()
+        Me.Allergies_txt = New System.Windows.Forms.TextBox()
         Me.Hospitalizations_txt = New System.Windows.Forms.TextBox()
         Me.Surgeries_txt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Illness_txt = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Allergies_txt = New System.Windows.Forms.TextBox()
-        Me.Medications_txt = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -67,6 +67,22 @@ Partial Class Past_Ocular_History
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(840, 505)
         Me.TableLayoutPanel1.TabIndex = 0
         '
+        'Medications_txt
+        '
+        Me.Medications_txt.Location = New System.Drawing.Point(282, 403)
+        Me.Medications_txt.Multiline = True
+        Me.Medications_txt.Name = "Medications_txt"
+        Me.Medications_txt.Size = New System.Drawing.Size(555, 94)
+        Me.Medications_txt.TabIndex = 9
+        '
+        'Allergies_txt
+        '
+        Me.Allergies_txt.Location = New System.Drawing.Point(282, 303)
+        Me.Allergies_txt.Multiline = True
+        Me.Allergies_txt.Name = "Allergies_txt"
+        Me.Allergies_txt.Size = New System.Drawing.Size(555, 94)
+        Me.Allergies_txt.TabIndex = 8
+        '
         'Hospitalizations_txt
         '
         Me.Hospitalizations_txt.Location = New System.Drawing.Point(282, 203)
@@ -86,30 +102,30 @@ Partial Class Past_Ocular_History
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 17)
+        Me.Label1.Size = New System.Drawing.Size(47, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Illness"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 100)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 17)
+        Me.Label2.Size = New System.Drawing.Size(64, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Sugeries"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(3, 200)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(123, 17)
+        Me.Label3.Size = New System.Drawing.Size(107, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Hospitalizations"
         '
@@ -121,6 +137,26 @@ Partial Class Past_Ocular_History
         Me.Illness_txt.Size = New System.Drawing.Size(555, 94)
         Me.Illness_txt.TabIndex = 3
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(3, 300)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(62, 17)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Allergies"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, 400)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(83, 17)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Medications"
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(522, 563)
@@ -129,42 +165,6 @@ Partial Class Past_Ocular_History
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(3, 300)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 17)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Allergies"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, 400)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 17)
-        Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Medications"
-        '
-        'Allergies_txt
-        '
-        Me.Allergies_txt.Location = New System.Drawing.Point(282, 303)
-        Me.Allergies_txt.Multiline = True
-        Me.Allergies_txt.Name = "Allergies_txt"
-        Me.Allergies_txt.Size = New System.Drawing.Size(555, 94)
-        Me.Allergies_txt.TabIndex = 8
-        '
-        'Medications_txt
-        '
-        Me.Medications_txt.Location = New System.Drawing.Point(282, 403)
-        Me.Medications_txt.Multiline = True
-        Me.Medications_txt.Name = "Medications_txt"
-        Me.Medications_txt.Size = New System.Drawing.Size(555, 94)
-        Me.Medications_txt.TabIndex = 9
         '
         'History_btn
         '
@@ -194,7 +194,7 @@ Partial Class Past_Ocular_History
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Past_Ocular_History"
-        Me.Text = "Add Past Ocular History"
+        Me.Text = "Add Past Medical History"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)

@@ -18,6 +18,7 @@ Public Class Take_Vitals
         Patient_Name = Specific_Extract_Table("MSMJ_Index", "vcmx1", "MSMJ_2", Patient_ID_Pub)
         Patient_Name_txt.Text = Patient_Name
         Calc_BMI_Value_txt.Enabled = False
+
         Select Case VitalsDisplayMode
 
             Case "Add"
@@ -38,16 +39,18 @@ Public Class Take_Vitals
                 'btn_Result.Enabled = False
                 'Save_btn.Enabled = False
 
-
-
+                Respiratory_Rate_Vale_txt.Enabled = False
+                Height_value_txt.Enabled = False
                 Pulse_Value_txt.Enabled = False
                 Temperature_Value_txt.Enabled = False
+                Weight_Value_txt.Enabled = False
+                Blood_Oxygen_Sat_txt.Enabled = False
 
                 Blood_Pressure_Value_txt.Enabled = False
 
                 Using connection As New SqlConnection(My.Settings.Myconn)
                     Dim command As SqlCommand = connection.CreateCommand()
-                    command.CommandText = "SELECT TD_Index, vc1, vc2, vc3, vc4, vc6, flt1, flt2, flt3, flt4 FROM TD_2 where vc2 = '" & ConsultationID & "'"
+                    command.CommandText = "SELECT TD_Index, vc1, vc2, vc3, vc4, vc6, flt1, flt2, flt3, flt4, mny1, mny2, mny3, mny4, mny5, mny6, mny7, mny8 FROM TD_2 where vc2 = '" & ConsultationID & "'"
 
                     'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 
@@ -60,10 +63,17 @@ Public Class Take_Vitals
 
 
 
-                            Pulse_Value_txt.Text = dataReader(6)
-                            Temperature_Value_txt.Text = dataReader(7)
+                            Height_value_txt.Text = dataReader(10)
+                            Weight_Value_txt.Text = dataReader(11)
+                            Calc_BMI_Value_txt.Text = dataReader(12)
+                            Temperature_Value_txt.Text = dataReader(13)
+                            Pulse_Value_txt.Text = dataReader(14)
+                            Respiratory_Rate_Vale_txt.Text = dataReader(15)
+                            Blood_Pressure_Value_txt.Text = dataReader(16)
+                            Blood_Oxygen_Sat_txt.Text = dataReader(17)
+                            Temperature_Value_txt.Text = dataReader(18)
 
-                            Blood_Pressure_Value_txt.Text = dataReader(9)
+
                         Loop
 
                         dataReader.Close()
@@ -282,8 +292,8 @@ command.ExecuteReader()
     End Function
 
     Private Sub History_btn_Click(sender As System.Object, e As System.EventArgs) Handles History_btn.Click
-        'Dim Vit_List As New Vitals_List
-        'Vit_List.Show()
+        Dim Vit_List As New Vitals_List
+        Vit_List.Show()
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked

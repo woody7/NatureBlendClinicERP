@@ -336,7 +336,7 @@ Public Class Diagnosis_form
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles History_btn.Click
-        Dim Diag_List As New Diagnosis_Grid
-        Diag_List.Show()
+        'Dim Diag_List As New Diagnosis_Grid
+        'Diag_List.Show()
     End Sub
 End Class

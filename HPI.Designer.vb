@@ -24,11 +24,11 @@ Partial Class HPI
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HPI))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.History_btn = New System.Windows.Forms.Button()
+        Me.Save_btn = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.HPI_txt = New System.Windows.Forms.TextBox()
-        Me.Save_btn = New System.Windows.Forms.Button()
-        Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,6 +43,24 @@ Partial Class HPI
         Me.GroupBox1.Size = New System.Drawing.Size(798, 443)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'History_btn
+        '
+        Me.History_btn.Location = New System.Drawing.Point(247, 378)
+        Me.History_btn.Name = "History_btn"
+        Me.History_btn.Size = New System.Drawing.Size(119, 40)
+        Me.History_btn.TabIndex = 2
+        Me.History_btn.Text = "History"
+        Me.History_btn.UseVisualStyleBackColor = True
+        '
+        'Save_btn
+        '
+        Me.Save_btn.Location = New System.Drawing.Point(460, 378)
+        Me.Save_btn.Name = "Save_btn"
+        Me.Save_btn.Size = New System.Drawing.Size(119, 40)
+        Me.Save_btn.TabIndex = 1
+        Me.Save_btn.Text = "Save"
+        Me.Save_btn.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel1
         '
@@ -75,24 +93,6 @@ Partial Class HPI
         Me.HPI_txt.Name = "HPI_txt"
         Me.HPI_txt.Size = New System.Drawing.Size(680, 238)
         Me.HPI_txt.TabIndex = 1
-        '
-        'Save_btn
-        '
-        Me.Save_btn.Location = New System.Drawing.Point(460, 378)
-        Me.Save_btn.Name = "Save_btn"
-        Me.Save_btn.Size = New System.Drawing.Size(119, 40)
-        Me.Save_btn.TabIndex = 1
-        Me.Save_btn.Text = "Save"
-        Me.Save_btn.UseVisualStyleBackColor = True
-        '
-        'History_btn
-        '
-        Me.History_btn.Location = New System.Drawing.Point(247, 378)
-        Me.History_btn.Name = "History_btn"
-        Me.History_btn.Size = New System.Drawing.Size(119, 40)
-        Me.History_btn.TabIndex = 2
-        Me.History_btn.Text = "History"
-        Me.History_btn.UseVisualStyleBackColor = True
         '
         'HPI
         '
