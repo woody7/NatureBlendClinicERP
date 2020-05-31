@@ -54,4 +54,11 @@ Module Supreme
     Public GenExamDisplayMode As String
     Public SelectedGenExamID As Integer
 
+    Public DiagnosisDisplayMode As String
+    Public SelectedDiagnosisID As Integer
+
+    Public TreatmentPlanDisplayMode As String
+    Public SelectedTreatmentPlanID As Integer
+   
+
 End Module

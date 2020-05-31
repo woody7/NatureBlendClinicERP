@@ -28,13 +28,17 @@ Partial Class Consultation_Form
         Me.Chief_Complaint_btn = New System.Windows.Forms.Button()
         Me.Vitals_btn = New System.Windows.Forms.Button()
         Me.Past_Medical_Hist_btn = New System.Windows.Forms.Button()
-        Me.CheckedinPatients_Grid = New System.Windows.Forms.DataGridView()
         Me.General_Exam_btn = New System.Windows.Forms.Button()
+        Me.Diagnosis_btn = New System.Windows.Forms.Button()
+        Me.Investigations_btn = New System.Windows.Forms.Button()
+        Me.CheckedinPatients_Grid = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Patient_Name_txt = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Refresh_btn = New System.Windows.Forms.Button()
+        Me.Treatment_Plan_btn = New System.Windows.Forms.Button()
+        Me.Next_Appt_btn = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.CheckedinPatients_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -60,6 +64,10 @@ Partial Class Consultation_Form
         Me.TableLayoutPanel1.Controls.Add(Me.Vitals_btn, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Past_Medical_Hist_btn, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.General_Exam_btn, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Diagnosis_btn, 0, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.Investigations_btn, 0, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Treatment_Plan_btn, 0, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.Next_Appt_btn, 0, 8)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 150)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 10
@@ -74,23 +82,23 @@ Partial Class Consultation_Form
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(175, 582)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(175, 852)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'HPI_btn
         '
-        Me.HPI_btn.Location = New System.Drawing.Point(3, 119)
+        Me.HPI_btn.Location = New System.Drawing.Point(3, 173)
         Me.HPI_btn.Name = "HPI_btn"
-        Me.HPI_btn.Size = New System.Drawing.Size(169, 52)
+        Me.HPI_btn.Size = New System.Drawing.Size(169, 79)
         Me.HPI_btn.TabIndex = 2
         Me.HPI_btn.Text = "HPI"
         Me.HPI_btn.UseVisualStyleBackColor = True
         '
         'Chief_Complaint_btn
         '
-        Me.Chief_Complaint_btn.Location = New System.Drawing.Point(3, 61)
+        Me.Chief_Complaint_btn.Location = New System.Drawing.Point(3, 88)
         Me.Chief_Complaint_btn.Name = "Chief_Complaint_btn"
-        Me.Chief_Complaint_btn.Size = New System.Drawing.Size(169, 52)
+        Me.Chief_Complaint_btn.Size = New System.Drawing.Size(169, 79)
         Me.Chief_Complaint_btn.TabIndex = 1
         Me.Chief_Complaint_btn.Text = "Chief Complaint"
         Me.Chief_Complaint_btn.UseVisualStyleBackColor = True
@@ -99,19 +107,46 @@ Partial Class Consultation_Form
         '
         Me.Vitals_btn.Location = New System.Drawing.Point(3, 3)
         Me.Vitals_btn.Name = "Vitals_btn"
-        Me.Vitals_btn.Size = New System.Drawing.Size(169, 52)
+        Me.Vitals_btn.Size = New System.Drawing.Size(169, 79)
         Me.Vitals_btn.TabIndex = 0
         Me.Vitals_btn.Text = "Vitals"
         Me.Vitals_btn.UseVisualStyleBackColor = True
         '
         'Past_Medical_Hist_btn
         '
-        Me.Past_Medical_Hist_btn.Location = New System.Drawing.Point(3, 177)
+        Me.Past_Medical_Hist_btn.Location = New System.Drawing.Point(3, 258)
         Me.Past_Medical_Hist_btn.Name = "Past_Medical_Hist_btn"
-        Me.Past_Medical_Hist_btn.Size = New System.Drawing.Size(169, 52)
+        Me.Past_Medical_Hist_btn.Size = New System.Drawing.Size(169, 79)
         Me.Past_Medical_Hist_btn.TabIndex = 3
         Me.Past_Medical_Hist_btn.Text = "Past Medical History"
         Me.Past_Medical_Hist_btn.UseVisualStyleBackColor = True
+        '
+        'General_Exam_btn
+        '
+        Me.General_Exam_btn.Location = New System.Drawing.Point(3, 343)
+        Me.General_Exam_btn.Name = "General_Exam_btn"
+        Me.General_Exam_btn.Size = New System.Drawing.Size(169, 79)
+        Me.General_Exam_btn.TabIndex = 4
+        Me.General_Exam_btn.Text = "General Examination"
+        Me.General_Exam_btn.UseVisualStyleBackColor = True
+        '
+        'Diagnosis_btn
+        '
+        Me.Diagnosis_btn.Location = New System.Drawing.Point(3, 428)
+        Me.Diagnosis_btn.Name = "Diagnosis_btn"
+        Me.Diagnosis_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Diagnosis_btn.TabIndex = 5
+        Me.Diagnosis_btn.Text = "Diagnosis"
+        Me.Diagnosis_btn.UseVisualStyleBackColor = True
+        '
+        'Investigations_btn
+        '
+        Me.Investigations_btn.Location = New System.Drawing.Point(3, 513)
+        Me.Investigations_btn.Name = "Investigations_btn"
+        Me.Investigations_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Investigations_btn.TabIndex = 6
+        Me.Investigations_btn.Text = "Investigations"
+        Me.Investigations_btn.UseVisualStyleBackColor = True
         '
         'CheckedinPatients_Grid
         '
@@ -121,15 +156,6 @@ Partial Class Consultation_Form
         Me.CheckedinPatients_Grid.RowTemplate.Height = 24
         Me.CheckedinPatients_Grid.Size = New System.Drawing.Size(276, 745)
         Me.CheckedinPatients_Grid.TabIndex = 2
-        '
-        'General_Exam_btn
-        '
-        Me.General_Exam_btn.Location = New System.Drawing.Point(3, 235)
-        Me.General_Exam_btn.Name = "General_Exam_btn"
-        Me.General_Exam_btn.Size = New System.Drawing.Size(169, 52)
-        Me.General_Exam_btn.TabIndex = 4
-        Me.General_Exam_btn.Text = "General Examination"
-        Me.General_Exam_btn.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -179,6 +205,24 @@ Partial Class Consultation_Form
         Me.Refresh_btn.Text = "Refresh"
         Me.Refresh_btn.UseVisualStyleBackColor = True
         '
+        'Treatment_Plan_btn
+        '
+        Me.Treatment_Plan_btn.Location = New System.Drawing.Point(3, 598)
+        Me.Treatment_Plan_btn.Name = "Treatment_Plan_btn"
+        Me.Treatment_Plan_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Treatment_Plan_btn.TabIndex = 7
+        Me.Treatment_Plan_btn.Text = "Treatment Plan"
+        Me.Treatment_Plan_btn.UseVisualStyleBackColor = True
+        '
+        'Next_Appt_btn
+        '
+        Me.Next_Appt_btn.Location = New System.Drawing.Point(3, 683)
+        Me.Next_Appt_btn.Name = "Next_Appt_btn"
+        Me.Next_Appt_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Next_Appt_btn.TabIndex = 8
+        Me.Next_Appt_btn.Text = "Next Appointment"
+        Me.Next_Appt_btn.UseVisualStyleBackColor = True
+        '
         'Consultation_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -213,4 +257,8 @@ Partial Class Consultation_Form
     Friend WithEvents Patient_Name_txt As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Refresh_btn As System.Windows.Forms.Button
+    Friend WithEvents Diagnosis_btn As System.Windows.Forms.Button
+    Friend WithEvents Investigations_btn As System.Windows.Forms.Button
+    Friend WithEvents Treatment_Plan_btn As System.Windows.Forms.Button
+    Friend WithEvents Next_Appt_btn As System.Windows.Forms.Button
 End Class

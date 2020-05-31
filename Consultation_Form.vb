@@ -165,4 +165,34 @@ Public Class Consultation_Form
         CheckedinPatients_Grid.Rows.Clear()
         Load_Grid()
     End Sub
+
+    Private Sub Diagnosis_btn_Click(sender As System.Object, e As System.EventArgs) Handles Diagnosis_btn.Click
+
+        DiagnosisDisplayMode = "Add"
+
+        Dim Diag As New Diagnosis_form
+
+        TabControl1.TabPages.Add(Diag)
+    End Sub
+
+    Private Sub Investigations_btn_Click(sender As System.Object, e As System.EventArgs) Handles Investigations_btn.Click
+
+
+        InvestigationsDisplayMode = "Add"
+
+        Dim Inv As New Investigations
+
+        TabControl1.TabPages.Add(Inv)
+
+    End Sub
+
+    Private Sub Treatment_Plan_btn_Click(sender As System.Object, e As System.EventArgs) Handles Treatment_Plan_btn.Click
+
+        TreatmentPlanDisplayMode = "Add"
+
+        Dim TreatP As New Treatment_Plan
+
+        TabControl1.TabPages.Add(TreatP)
+
+    End Sub
 End Class

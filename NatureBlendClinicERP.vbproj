@@ -129,6 +129,12 @@
     <Compile Include="Diagnosis_form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Diagnosis_List.Designer.vb">
+      <DependentUpon>Diagnosis_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,18 @@
       <DependentUpon>HPI_List.vb</DependentUpon>
     </Compile>
     <Compile Include="HPI_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigations List.Designer.vb">
+      <DependentUpon>Investigations List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigations List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigations.Designer.vb">
+      <DependentUpon>Investigations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigations.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -194,6 +212,18 @@
     <Compile Include="Take Vitals.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Treatment Plan.Designer.vb">
+      <DependentUpon>Treatment Plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment Plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreatmentPlan_List.Designer.vb">
+      <DependentUpon>TreatmentPlan_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentPlan_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vitals_List.Designer.vb">
       <DependentUpon>Vitals_List.vb</DependentUpon>
     </Compile>
@@ -226,6 +256,9 @@
     <EmbeddedResource Include="Diagnosis_form.resx">
       <DependentUpon>Diagnosis_form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis_List.resx">
+      <DependentUpon>Diagnosis_List.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +274,12 @@
     <EmbeddedResource Include="HPI_List.resx">
       <DependentUpon>HPI_List.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Investigations List.resx">
+      <DependentUpon>Investigations List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigations.resx">
+      <DependentUpon>Investigations.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -255,6 +294,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Take Vitals.resx">
       <DependentUpon>Take Vitals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment Plan.resx">
+      <DependentUpon>Treatment Plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreatmentPlan_List.resx">
+      <DependentUpon>TreatmentPlan_List.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vitals_List.resx">
       <DependentUpon>Vitals_List.vb</DependentUpon>
