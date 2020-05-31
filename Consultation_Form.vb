@@ -195,4 +195,14 @@ Public Class Consultation_Form
         TabControl1.TabPages.Add(TreatP)
 
     End Sub
+
+    Private Sub Next_Appt_btn_Click(sender As System.Object, e As System.EventArgs) Handles Next_Appt_btn.Click
+
+
+        ApointmentDisplayMode = "Add"
+
+        Dim Appt As New Next_Appointment
+
+        TabControl1.TabPages.Add(Appt)
+    End Sub
 End Class

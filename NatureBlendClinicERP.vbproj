@@ -87,6 +87,12 @@
     <Compile Include="Add Patient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Appointment_List.Designer.vb">
+      <DependentUpon>Appointment_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Checked-In Patients.Designer.vb">
       <DependentUpon>Checked-In Patients.vb</DependentUpon>
     </Compile>
@@ -193,6 +199,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Next Appointment.Designer.vb">
+      <DependentUpon>Next Appointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Next Appointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Past Medical History List.Designer.vb">
       <DependentUpon>Past Medical History List.vb</DependentUpon>
     </Compile>
@@ -234,6 +246,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Add Patient.resx">
       <DependentUpon>Add Patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment_List.resx">
+      <DependentUpon>Appointment_List.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Checked-In Patients.resx">
       <DependentUpon>Checked-In Patients.vb</DependentUpon>
@@ -285,6 +300,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next Appointment.resx">
+      <DependentUpon>Next Appointment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Past Medical History List.resx">
       <DependentUpon>Past Medical History List.vb</DependentUpon>

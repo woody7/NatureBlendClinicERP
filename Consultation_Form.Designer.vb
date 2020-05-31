@@ -31,14 +31,14 @@ Partial Class Consultation_Form
         Me.General_Exam_btn = New System.Windows.Forms.Button()
         Me.Diagnosis_btn = New System.Windows.Forms.Button()
         Me.Investigations_btn = New System.Windows.Forms.Button()
+        Me.Treatment_Plan_btn = New System.Windows.Forms.Button()
+        Me.Next_Appt_btn = New System.Windows.Forms.Button()
         Me.CheckedinPatients_Grid = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Patient_Name_txt = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Refresh_btn = New System.Windows.Forms.Button()
-        Me.Treatment_Plan_btn = New System.Windows.Forms.Button()
-        Me.Next_Appt_btn = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.CheckedinPatients_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -148,6 +148,24 @@ Partial Class Consultation_Form
         Me.Investigations_btn.Text = "Investigations"
         Me.Investigations_btn.UseVisualStyleBackColor = True
         '
+        'Treatment_Plan_btn
+        '
+        Me.Treatment_Plan_btn.Location = New System.Drawing.Point(3, 598)
+        Me.Treatment_Plan_btn.Name = "Treatment_Plan_btn"
+        Me.Treatment_Plan_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Treatment_Plan_btn.TabIndex = 7
+        Me.Treatment_Plan_btn.Text = "Treatment Plan"
+        Me.Treatment_Plan_btn.UseVisualStyleBackColor = True
+        '
+        'Next_Appt_btn
+        '
+        Me.Next_Appt_btn.Location = New System.Drawing.Point(3, 683)
+        Me.Next_Appt_btn.Name = "Next_Appt_btn"
+        Me.Next_Appt_btn.Size = New System.Drawing.Size(169, 79)
+        Me.Next_Appt_btn.TabIndex = 8
+        Me.Next_Appt_btn.Text = "Next Appointment"
+        Me.Next_Appt_btn.UseVisualStyleBackColor = True
+        '
         'CheckedinPatients_Grid
         '
         Me.CheckedinPatients_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -204,24 +222,6 @@ Partial Class Consultation_Form
         Me.Refresh_btn.TabIndex = 7
         Me.Refresh_btn.Text = "Refresh"
         Me.Refresh_btn.UseVisualStyleBackColor = True
-        '
-        'Treatment_Plan_btn
-        '
-        Me.Treatment_Plan_btn.Location = New System.Drawing.Point(3, 598)
-        Me.Treatment_Plan_btn.Name = "Treatment_Plan_btn"
-        Me.Treatment_Plan_btn.Size = New System.Drawing.Size(169, 79)
-        Me.Treatment_Plan_btn.TabIndex = 7
-        Me.Treatment_Plan_btn.Text = "Treatment Plan"
-        Me.Treatment_Plan_btn.UseVisualStyleBackColor = True
-        '
-        'Next_Appt_btn
-        '
-        Me.Next_Appt_btn.Location = New System.Drawing.Point(3, 683)
-        Me.Next_Appt_btn.Name = "Next_Appt_btn"
-        Me.Next_Appt_btn.Size = New System.Drawing.Size(169, 79)
-        Me.Next_Appt_btn.TabIndex = 8
-        Me.Next_Appt_btn.Text = "Next Appointment"
-        Me.Next_Appt_btn.UseVisualStyleBackColor = True
         '
         'Consultation_Form
         '
