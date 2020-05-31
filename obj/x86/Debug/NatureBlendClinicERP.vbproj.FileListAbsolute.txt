@@ -5,7 +5,6 @@ C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicE
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\EnterpriseWrapping.dll
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\Total Accounting SDK.dll
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\EnterpriseFramework.dll
-C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbprojResolveAssemblyReference.cache
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Add_Patient.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Checked_In_Patients.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Check_in_Form.resources
