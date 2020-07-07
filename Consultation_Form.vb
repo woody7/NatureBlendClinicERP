@@ -205,4 +205,43 @@ Public Class Consultation_Form
 
         TabControl1.TabPages.Add(Appt)
     End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        Select Case MessageBox.Show("Are you sure you want to end consultation? This will close the window and check the patient out.", "Check Out Patient", MessageBoxButtons.YesNo)
+
+            Case vbYes
+
+
+                Dim TDM_Index As Integer
+                TDM_Index = Specific_Extract_Table("int1", "TDM_Index", "TDM_1", Patient_ID_Pub)
+
+                Me.Close()
+
+                Try
+
+                    Dim SQLCon As New SqlClient.SqlConnection
+                    Dim SQLCmd As New SqlClient.SqlCommand
+
+                    SQLCon.ConnectionString = My.Settings.Myconn
+                    SQLCon.Open()
+                    SQLCmd.CommandText = "sp_delete_row_in_TDM_1" ' Stored Procedure to Call
+                    SQLCmd.CommandType = CommandType.StoredProcedure 'Setup Command Type
+                    SQLCmd.Connection = SQLCon 'Active Connection
+
+                    SQLCmd.Parameters.AddWithValue("TDM_Index", SqlDbType.Int).Value = TDM_Index
+
+                    SQLCmd.ExecuteNonQuery()
+                    SQLCon.Close()
+
+                Catch ex As Exception
+                    MessageBox.Show(ex.Message)
+
+                End Try
+
+            Case vbNo
+
+                Exit Sub
+
+        End Select
+    End Sub
 End Class

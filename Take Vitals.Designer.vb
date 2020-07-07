@@ -63,6 +63,7 @@ Partial Class Take_Vitals
         '
         Me.Pulse_Value_txt.DecimalPlaces = 2
         Me.Pulse_Value_txt.Location = New System.Drawing.Point(217, 303)
+        Me.Pulse_Value_txt.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.Pulse_Value_txt.Name = "Pulse_Value_txt"
         Me.Pulse_Value_txt.Size = New System.Drawing.Size(189, 22)
         Me.Pulse_Value_txt.TabIndex = 10
@@ -71,6 +72,7 @@ Partial Class Take_Vitals
         '
         Me.Temperature_Value_txt.DecimalPlaces = 2
         Me.Temperature_Value_txt.Location = New System.Drawing.Point(217, 253)
+        Me.Temperature_Value_txt.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.Temperature_Value_txt.Name = "Temperature_Value_txt"
         Me.Temperature_Value_txt.Size = New System.Drawing.Size(189, 22)
         Me.Temperature_Value_txt.TabIndex = 11
@@ -263,6 +265,7 @@ Partial Class Take_Vitals
         '
         Me.Blood_Oxygen_Sat_txt.DecimalPlaces = 2
         Me.Blood_Oxygen_Sat_txt.Location = New System.Drawing.Point(217, 453)
+        Me.Blood_Oxygen_Sat_txt.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.Blood_Oxygen_Sat_txt.Name = "Blood_Oxygen_Sat_txt"
         Me.Blood_Oxygen_Sat_txt.Size = New System.Drawing.Size(189, 22)
         Me.Blood_Oxygen_Sat_txt.TabIndex = 12
@@ -271,6 +274,7 @@ Partial Class Take_Vitals
         '
         Me.Respiratory_Rate_Vale_txt.DecimalPlaces = 2
         Me.Respiratory_Rate_Vale_txt.Location = New System.Drawing.Point(217, 353)
+        Me.Respiratory_Rate_Vale_txt.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.Respiratory_Rate_Vale_txt.Name = "Respiratory_Rate_Vale_txt"
         Me.Respiratory_Rate_Vale_txt.Size = New System.Drawing.Size(189, 22)
         Me.Respiratory_Rate_Vale_txt.TabIndex = 13
@@ -297,6 +301,7 @@ Partial Class Take_Vitals
         '
         Me.Calc_BMI_Value_txt.DecimalPlaces = 2
         Me.Calc_BMI_Value_txt.Location = New System.Drawing.Point(217, 203)
+        Me.Calc_BMI_Value_txt.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.Calc_BMI_Value_txt.Name = "Calc_BMI_Value_txt"
         Me.Calc_BMI_Value_txt.Size = New System.Drawing.Size(189, 22)
         Me.Calc_BMI_Value_txt.TabIndex = 16

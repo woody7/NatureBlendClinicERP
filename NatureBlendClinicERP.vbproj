@@ -217,6 +217,12 @@
     <Compile Include="Past Medical History.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Patient List.Designer.vb">
+      <DependentUpon>Patient List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient List.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Supreme.vb" />
     <Compile Include="Take Vitals.Designer.vb">
       <DependentUpon>Take Vitals.vb</DependentUpon>
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Past Medical History.resx">
       <DependentUpon>Past Medical History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient List.resx">
+      <DependentUpon>Patient List.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Take Vitals.resx">
       <DependentUpon>Take Vitals.vb</DependentUpon>

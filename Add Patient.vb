@@ -20,7 +20,9 @@ Public Class Add_Patient
 
                 Using connection As New SqlConnection(My.Settings.Myconn)
                     Dim command As SqlCommand = connection.CreateCommand()
-                    command.CommandText = "SELECT MSEXTMJ_Index,vcmx1,vcmx2,vcmx3,vcmx4,date2,vc2,vc3,vcmx5,vcmx6,date1,vc5,vc4, vc6, vc7, vcmx7, vc1 FROM dbo.MSEXTMJ_1 Where MSEXTMJ_Index = " & SelectedPatientID
+                    'command.CommandText = "SELECT MSEXTMJ_Index,vcmx1,vcmx2,vcmx3,vcmx4,date2,vc2,vc3,vcmx5,vcmx6,date1,vc5,vc4, vc6, vc7, vcmx7, vc1 FROM dbo.MSEXTMJ_1 Where MSEXTMJ_Index = " & SelectedPatientID
+
+                    command.CommandText = "SELECT MSMJ_Index,vcmx1,vcmx2,vcmx3,vcmx4,date2,vcmx9,vcmx10,vcmx5,vcmx6, vcmx11, vcmx12, vcmx13, vcmx7 FROM dbo.MSMJ_2 Where MSMJ_Index = " & SelectedPatientID
 
 
                     Try
@@ -37,16 +39,16 @@ Public Class Add_Patient
                             Last_Name_txt.Text = dataReader(4)
                             Sex_cbo.Text = dataReader(8)
                             Marital_Status_txt.Text = dataReader(9)
-                            Nationality_cbo.Text = dataReader(15)
+                            Nationality_cbo.Text = dataReader(13)
 
 
                             Email_txt.Text = dataReader(16)
                             Telephone_txt.Text = dataReader(6)
                             Location_txt.Text = dataReader(7)
-                            Relative_Name_txt.Text = dataReader(12)
-                            Relative_Tel_txt.Text = dataReader(13)
-                            Insurance_cbo.Text = dataReader(14)
-
+                            Relative_Name_txt.Text = dataReader(10)
+                            Relative_Tel_txt.Text = dataReader(11)
+                            Insurance_cbo.Text = dataReader(12)
+                            DOB_txt.Text = dataReader(5)
 
                         Loop
 
