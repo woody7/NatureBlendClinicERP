@@ -4,7 +4,12 @@ Imports System.Data.SqlClient
 Imports EnterpriseWrapping
 Imports Total_Accounting_Class_Library
 
+
+
 Public Class Add_Patient
+
+    Public PatientIDSuffix As Integer
+    Public PatientIDVar As String
 
     Private Sub Add_Patient_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -283,7 +288,7 @@ Public Class Add_Patient
             New_Patient.vc7 = ""
             New_Patient.vc8 = ""
             New_Patient.vc9 = ""
-            New_Patient.vc10 = ""
+            New_Patient.vc10 = PatientIDVar
             New_Patient.vc11 = ""
             New_Patient.vc12 = ""
             New_Patient.vc13 = ""
@@ -459,6 +464,45 @@ Public Class Add_Patient
         End Try
 
 
+        Try
+
+            Dim SQLCon As New SqlClient.SqlConnection
+            Dim SQLCmd As New SqlClient.SqlCommand
+
+            SQLCon.ConnectionString = My.Settings.Myconn
+            SQLCon.Open()
+            SQLCmd.CommandText = "sp_update_row_in_MSEXTMI_1" ' Stored Procedure to Call
+            SQLCmd.CommandType = CommandType.StoredProcedure 'Setup Command Type
+            SQLCmd.Connection = SQLCon 'Active Connection
+
+            SQLCmd.Parameters.AddWithValue("vcmx1", SqlDbType.VarChar).Value = ""
+            SQLCmd.Parameters.AddWithValue("vcmx2", SqlDbType.Int).Value = ""
+            SQLCmd.Parameters.AddWithValue("vcmx3", SqlDbType.Int).Value = ""
+            SQLCmd.Parameters.AddWithValue("vcmx4", SqlDbType.Int).Value = ""
+            SQLCmd.Parameters.AddWithValue("vc1", SqlDbType.VarChar).Value = ""
+            SQLCmd.Parameters.AddWithValue("vc2", SqlDbType.VarChar).Value = ""
+            SQLCmd.Parameters.AddWithValue("vc3", SqlDbType.VarChar).Value = ""
+            SQLCmd.Parameters.AddWithValue("vc4", SqlDbType.VarChar).Value = ""
+            SQLCmd.Parameters.AddWithValue("int1", SqlDbType.Int).Value = PatientIDSuffix
+            SQLCmd.Parameters.AddWithValue("bit1", SqlDbType.Bit).Value = 0
+            SQLCmd.Parameters.AddWithValue("smint1", SqlDbType.Int).Value = 0
+            SQLCmd.Parameters.AddWithValue("smint2", SqlDbType.Int).Value = 0
+            SQLCmd.Parameters.AddWithValue("date1", SqlDbType.Int).Value = Today
+            SQLCmd.Parameters.AddWithValue("time1", SqlDbType.Int).Value = Now
+            SQLCmd.Parameters.AddWithValue("dtime1", SqlDbType.Int).Value = Now
+            SQLCmd.Parameters.AddWithValue("MSEXTMI_Index", SqlDbType.Int).Value = 1
+
+
+            SQLCmd.ExecuteNonQuery()
+            SQLCon.Close()
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+
+        End Try
+
+
+
         Dim cs As New Total_Accounting_Class_Library.Customer_Integration
         cs.DatabaseVersion = 2
 
@@ -470,7 +514,7 @@ Public Class Add_Patient
         'Dim result As String
 
 
-        cs.Add_New_Customer(PatientName, "", First_Name_txt.Text, Middle_Name_txt.Text, Last_Name_txt.Text, "", "", Email_txt.Text, "", 0, 0, Location_txt.Text, "", "", Telephone_txt.Text, "4", "")
+        cs.Add_New_Customer(PatientIDVar, "", First_Name_txt.Text, Middle_Name_txt.Text, Last_Name_txt.Text, "", "", Email_txt.Text, "", 0, 0, Location_txt.Text, "", "", Telephone_txt.Text, "4", "")
 
 
 
@@ -502,4 +546,118 @@ Public Class Add_Patient
             Return ms.ToArray
         End Using
     End Function
+
+    Sub GenerateID()
+        'Me.IDGeneratorTableAdapter.Fill(Me.SchDataDataSet1.IDGenerator)
+        'Dim Yr As String
+        'Yr = Format(Today, "yyyy")
+        'If YrGroupTextBox.Text >= Yr Then
+        ' NCode = CodeTextBox.Text
+        'Else
+        ''NCode = 0
+        'CodeTextBox.Text = 0
+        'YrGroupTextBox.Text = Yr
+        'End If
+
+        Dim Lname = Last_Name_txt.Text
+        Dim Lastname = Lname.Substring(0, If(Lname.Length >= 2, 2, Lname.Length))
+        Dim Fname = First_Name_txt.Text
+        Dim Firstname = Fname.Substring(0, If(Fname.Length >= 2, 2, Fname.Length))
+
+        Dim PrePatientIDSuffix As Integer
+        'Dim PatientIDSuffix As Integer
+
+        PrePatientIDSuffix = Specific_Extract_Table("MSEXTMI_Index", "int1", "MSEXTMI_1", 1)
+
+        PatientIDSuffix = PrePatientIDSuffix + 1
+
+        'Try
+
+        '    Dim SQLCon As New SqlClient.SqlConnection
+        '    Dim SQLCmd As New SqlClient.SqlCommand
+
+        '    SQLCon.ConnectionString = My.Settings.Myconn
+        '    SQLCon.Open()
+        '    SQLCmd.CommandText = "sp_update_row_in_MSEXTMI_1" ' Stored Procedure to Call
+        '    SQLCmd.CommandType = CommandType.StoredProcedure 'Setup Command Type
+        '    SQLCmd.Connection = SQLCon 'Active Connection
+
+        '    SQLCmd.Parameters.AddWithValue("vcmx1", SqlDbType.VarChar).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vcmx2", SqlDbType.Int).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vcmx3", SqlDbType.Int).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vcmx4", SqlDbType.Int).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vc1", SqlDbType.VarChar).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vc2", SqlDbType.VarChar).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vc3", SqlDbType.VarChar).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("vc4", SqlDbType.VarChar).Value = ""
+        '    SQLCmd.Parameters.AddWithValue("int1", SqlDbType.Int).Value = PatientIDSuffix
+        '    SQLCmd.Parameters.AddWithValue("bit1", SqlDbType.Bit).Value = 0
+        '    SQLCmd.Parameters.AddWithValue("smint1", SqlDbType.Int).Value = 0
+        '    SQLCmd.Parameters.AddWithValue("smint2", SqlDbType.Int).Value = 0
+        '    SQLCmd.Parameters.AddWithValue("date1", SqlDbType.Int).Value = Today
+        '    SQLCmd.Parameters.AddWithValue("time1", SqlDbType.Int).Value = Now
+        '    SQLCmd.Parameters.AddWithValue("dtime1", SqlDbType.Int).Value = Now
+        '    SQLCmd.Parameters.AddWithValue("MSEXTMI_Index", SqlDbType.Int).Value = 1
+
+
+        '    SQLCmd.ExecuteNonQuery()
+        '    SQLCon.Close()
+
+        'Catch ex As Exception
+        '    MessageBox.Show(ex.Message)
+
+        'End Try
+
+        'Dim RandomCode As String = (Int((10 * Rnd()) + 1))
+
+        PatientID_txt.Text = Firstname & "-" & Lastname & "-" & PatientIDSuffix
+        PatientIDVar = PatientID_txt.Text
+
+        Patient_Name_txt.Text = String.Concat(First_Name_txt.Text, " ", Middle_Name_txt.Text, " ", Last_Name_txt.Text)
+        'Patient_Name_txt.Text = First_Name_txt.Text & "" & Middle_Name_txt.Text & "" & Last_Name_txt.Text
+    End Sub
+
+    Function Specific_Extract_Table(ByVal reference_column As String, ByVal results_column As String, ByVal Table As String, ByVal RowID As Integer) As String
+        Dim info_value As String
+
+        Dim connectionString As String = My.Settings.Myconn
+
+
+        Dim queryString As String = _
+         "SELECT " & results_column & " from " & Table & " where " & reference_column & " = " & RowID.ToString
+
+        Using connection As New SqlConnection(connectionString)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+                    info_value = dataReader(0).ToString
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                'ShowException(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
+        Return info_value
+
+
+
+    End Function
+
+    Private Sub Last_Name_txt_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Last_Name_txt.TextChanged
+        Call GenerateID()
+    End Sub
 End Class

@@ -36,3 +36,4 @@ C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicE
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Appointment_List.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Next_Appointment.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Patient_List.resources
+C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbprojResolveAssemblyReference.cache

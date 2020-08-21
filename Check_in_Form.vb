@@ -38,16 +38,21 @@ Public Class Check_in_Form
 
         Dim Patient_ID As Integer
         Patient_ID = Patient_Name_cbo.SelectedValue
+        Dim Patient_int_ID_str As String
+        Patient_int_ID_str = Patient_ID.ToString
+
+        Dim Patient_ID_Str As String
+
         Dim Check_in_date_for_ID As String
         Check_in_date_for_ID = DateTime.Now.ToString("yyyy-MM-dd")
 
         Dim Consultation_ID As String
 
-
+        Patient_ID_Str = Specific_Extract_Table("MSMJ_Index", "vc10", "MSMJ_2", Patient_int_ID_str)
 
         Dim one As String
         one = 1
-        Dim Check_IN_ID = Patient_ID.ToString + "_" + Check_in_date_for_ID + "_" + TimeOfDay.Hour.ToString & TimeOfDay.Minute.ToString & TimeOfDay.Second.ToString
+        Dim Check_IN_ID = Patient_ID_Str + "_" + Check_in_date_for_ID + "_" + TimeOfDay.Hour.ToString & TimeOfDay.Minute.ToString & TimeOfDay.Second.ToString
 
         Consultation_ID = "Cons" + "_" + Check_IN_ID
 
@@ -276,4 +281,44 @@ Public Class Check_in_Form
         Patient_Name_cbo.Text = Nothing
         Notes_txt.Text = Nothing
     End Sub
+
+    Function Specific_Extract_Table(ByVal reference_column As String, ByVal results_column As String, ByVal Table As String, ByVal RowID As Integer) As String
+        Dim info_value As String
+
+        Dim connectionString As String = My.Settings.Myconn
+
+
+        Dim queryString As String = _
+         "SELECT " & results_column & " from " & Table & " where " & reference_column & " = " & RowID.ToString
+
+        Using connection As New SqlConnection(connectionString)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader = _
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+                    info_value = dataReader(0).ToString
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                'ShowException(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
+        Return info_value
+
+
+
+    End Function
 End Class

@@ -27,20 +27,22 @@ Partial Class Add_Patient
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Patient_Name_txt = New System.Windows.Forms.TextBox()
-        Me.First_Name_txt = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Marital_Status_txt = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Sex_cbo = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.DOB_txt = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Last_Name_txt = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Middle_Name_txt = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.First_Name_txt = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Patient_Name_txt = New System.Windows.Forms.TextBox()
+        Me.PatientID_txt = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -64,8 +66,6 @@ Partial Class Add_Patient
         Me.Exit_btn = New System.Windows.Forms.Button()
         Me.Save_btn = New System.Windows.Forms.Button()
         Me.Add_New_btn = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,7 +130,7 @@ Partial Class Add_Patient
         Me.TableLayoutPanel1.Controls.Add(Me.First_Name_txt, 2, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Patient_Name_txt, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PatientID_txt, 2, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(105, 63)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 8
@@ -145,47 +145,14 @@ Partial Class Add_Patient
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(616, 357)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'Label1
+        'Label8
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 40)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Patient Name"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 80)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "First Name"
-        '
-        'Patient_Name_txt
-        '
-        Me.Patient_Name_txt.Enabled = False
-        Me.Patient_Name_txt.Location = New System.Drawing.Point(175, 43)
-        Me.Patient_Name_txt.Name = "Patient_Name_txt"
-        Me.Patient_Name_txt.Size = New System.Drawing.Size(219, 22)
-        Me.Patient_Name_txt.TabIndex = 8
-        '
-        'First_Name_txt
-        '
-        Me.First_Name_txt.Location = New System.Drawing.Point(175, 83)
-        Me.First_Name_txt.Name = "First_Name_txt"
-        Me.First_Name_txt.Size = New System.Drawing.Size(219, 22)
-        Me.First_Name_txt.TabIndex = 9
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(34, 280)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 17)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Marital Status"
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(34, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 17)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "PatientID"
         '
         'Marital_Status_txt
         '
@@ -196,14 +163,14 @@ Partial Class Add_Patient
         Me.Marital_Status_txt.Size = New System.Drawing.Size(219, 24)
         Me.Marital_Status_txt.TabIndex = 13
         '
-        'Label5
+        'Label6
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(34, 240)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(31, 17)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Sex"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(34, 280)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(94, 17)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Marital Status"
         '
         'Sex_cbo
         '
@@ -214,6 +181,22 @@ Partial Class Add_Patient
         Me.Sex_cbo.Size = New System.Drawing.Size(219, 24)
         Me.Sex_cbo.TabIndex = 12
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(34, 240)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(31, 17)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Sex"
+        '
+        'DOB_txt
+        '
+        Me.DOB_txt.Location = New System.Drawing.Point(175, 203)
+        Me.DOB_txt.Name = "DOB_txt"
+        Me.DOB_txt.Size = New System.Drawing.Size(219, 22)
+        Me.DOB_txt.TabIndex = 11
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -222,13 +205,6 @@ Partial Class Add_Patient
         Me.Label4.Size = New System.Drawing.Size(87, 17)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Date of Birth"
-        '
-        'DOB_txt
-        '
-        Me.DOB_txt.Location = New System.Drawing.Point(175, 203)
-        Me.DOB_txt.Name = "DOB_txt"
-        Me.DOB_txt.Size = New System.Drawing.Size(219, 22)
-        Me.DOB_txt.TabIndex = 11
         '
         'Label3
         '
@@ -241,6 +217,7 @@ Partial Class Add_Patient
         '
         'Last_Name_txt
         '
+        Me.Last_Name_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.Last_Name_txt.Location = New System.Drawing.Point(175, 163)
         Me.Last_Name_txt.Name = "Last_Name_txt"
         Me.Last_Name_txt.Size = New System.Drawing.Size(219, 22)
@@ -257,10 +234,53 @@ Partial Class Add_Patient
         '
         'Middle_Name_txt
         '
+        Me.Middle_Name_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.Middle_Name_txt.Location = New System.Drawing.Point(175, 123)
         Me.Middle_Name_txt.Name = "Middle_Name_txt"
         Me.Middle_Name_txt.Size = New System.Drawing.Size(219, 22)
         Me.Middle_Name_txt.TabIndex = 15
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(34, 80)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(76, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "First Name"
+        '
+        'First_Name_txt
+        '
+        Me.First_Name_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.First_Name_txt.Location = New System.Drawing.Point(175, 83)
+        Me.First_Name_txt.Name = "First_Name_txt"
+        Me.First_Name_txt.Size = New System.Drawing.Size(219, 22)
+        Me.First_Name_txt.TabIndex = 9
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(34, 40)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Patient Name"
+        '
+        'Patient_Name_txt
+        '
+        Me.Patient_Name_txt.Enabled = False
+        Me.Patient_Name_txt.Location = New System.Drawing.Point(175, 43)
+        Me.Patient_Name_txt.Name = "Patient_Name_txt"
+        Me.Patient_Name_txt.Size = New System.Drawing.Size(219, 22)
+        Me.Patient_Name_txt.TabIndex = 8
+        '
+        'PatientID_txt
+        '
+        Me.PatientID_txt.Enabled = False
+        Me.PatientID_txt.Location = New System.Drawing.Point(175, 3)
+        Me.PatientID_txt.Name = "PatientID_txt"
+        Me.PatientID_txt.Size = New System.Drawing.Size(219, 22)
+        Me.PatientID_txt.TabIndex = 17
         '
         'TabPage2
         '
@@ -497,23 +517,6 @@ Partial Class Add_Patient
         Me.Add_New_btn.Text = "Add New"
         Me.Add_New_btn.UseVisualStyleBackColor = True
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(34, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 17)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "PatientID"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(175, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(219, 22)
-        Me.TextBox1.TabIndex = 17
-        '
         'Add_Patient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -582,5 +585,5 @@ Partial Class Add_Patient
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PatientID_txt As System.Windows.Forms.TextBox
 End Class
