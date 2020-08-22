@@ -48,7 +48,7 @@ Public Class Vitals_List
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.TD_2.TD_Index, dbo.MSMJ_2.MSMJ_Index, dbo.TD_2.vc1, dbo.TD_2.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TD_2.date1, dbo.TD_2.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TD_2 ON dbo.MSMJ_2.MSMJ_Index = dbo.TD_2.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
+            command.CommandText = "SELECT dbo.TD_2.TD_Index, dbo.MSMJ_2.vc10, dbo.TD_2.vc1, dbo.TD_2.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TD_2.date1, dbo.TD_2.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TD_2 ON dbo.MSMJ_2.MSMJ_Index = dbo.TD_2.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
 
             'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 

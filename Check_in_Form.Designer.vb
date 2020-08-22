@@ -29,7 +29,7 @@ Partial Class Check_in_Form
         Me.Notes_txt = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Patient_Name_cbo = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Search_btn = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Time_txt = New System.Windows.Forms.TextBox()
         Me.Save_Check_in = New System.Windows.Forms.Button()
@@ -49,7 +49,7 @@ Partial Class Check_in_Form
         Me.TableLayoutPanel1.Controls.Add(Me.Notes_txt, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Patient_Name_cbo, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button1, 2, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.Search_btn, 2, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Time_txt, 1, 1)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(105, 52)
@@ -117,14 +117,14 @@ Partial Class Check_in_Form
         Me.Patient_Name_cbo.Size = New System.Drawing.Size(209, 24)
         Me.Patient_Name_cbo.TabIndex = 3
         '
-        'Button1
+        'Search_btn
         '
-        Me.Button1.Location = New System.Drawing.Point(368, 103)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Search"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Search_btn.Location = New System.Drawing.Point(368, 103)
+        Me.Search_btn.Name = "Search_btn"
+        Me.Search_btn.Size = New System.Drawing.Size(75, 23)
+        Me.Search_btn.TabIndex = 6
+        Me.Search_btn.Text = "Search"
+        Me.Search_btn.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -173,7 +173,7 @@ Partial Class Check_in_Form
     Friend WithEvents Notes_txt As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Patient_Name_cbo As System.Windows.Forms.ComboBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Search_btn As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Time_txt As System.Windows.Forms.TextBox
     Friend WithEvents Save_Check_in As System.Windows.Forms.Button

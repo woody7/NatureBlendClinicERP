@@ -74,7 +74,7 @@ Public Class Chief_Complaint_Grid
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.TDM_2.TDM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.TDM_2.vc1, dbo.TDM_2.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_2.vcmx1, dbo.TDM_2.vcmx2 AS Expr1, dbo.TDM_2.vcmx3 AS Expr2, dbo.TDM_2.vcmx4 AS Expr3, dbo.TDM_2.date1, dbo.TDM_2.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_2 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_2.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
+            command.CommandText = "SELECT dbo.TDM_2.TDM_Index, dbo.MSMJ_2.vc10, dbo.TDM_2.vc1, dbo.TDM_2.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_2.vcmx1, dbo.TDM_2.vcmx2 AS Expr1, dbo.TDM_2.vcmx3 AS Expr2, dbo.TDM_2.vcmx4 AS Expr3, dbo.TDM_2.date1, dbo.TDM_2.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_2 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_2.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
 
             'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 

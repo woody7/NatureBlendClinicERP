@@ -49,7 +49,7 @@ Public Class Appointment_List
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.MTM_4.MTM_Index, dbo.MSMJ_2.MSMJ_Index, dbo.MTM_4.vc1, dbo.MTM_4.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.MTM_4.vc4, dbo.MTM_4.vc3, dbo.MTM_4.date1, dbo.MTM_4.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_4 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_4.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
+            command.CommandText = "SELECT dbo.MTM_4.MTM_Index, dbo.MSMJ_2.vc10, dbo.MTM_4.vc1, dbo.MTM_4.vc2, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.MTM_4.vc4, dbo.MTM_4.vc3, dbo.MTM_4.date1, dbo.MTM_4.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.MTM_4 ON dbo.MSMJ_2.MSMJ_Index = dbo.MTM_4.int1 WHERE dbo.MSMJ_2.MSMJ_Index = " & Patient_ID_Pub
 
             'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 

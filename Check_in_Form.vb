@@ -321,4 +321,9 @@ Public Class Check_in_Form
 
 
     End Function
+
+    Private Sub Search_btn_Click(sender As System.Object, e As System.EventArgs) Handles Search_btn.Click
+        Advance_Search.ShowDialog()
+        Patient_Name_cbo.Text = Advance_Search.MemberID
+    End Sub
 End Class

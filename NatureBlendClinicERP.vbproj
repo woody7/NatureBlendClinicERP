@@ -87,6 +87,12 @@
     <Compile Include="Add Patient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Advance Search.Designer.vb">
+      <DependentUpon>Advance Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advance Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Appointment_List.Designer.vb">
       <DependentUpon>Appointment_List.vb</DependentUpon>
     </Compile>
@@ -252,6 +258,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Add Patient.resx">
       <DependentUpon>Add Patient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advance Search.resx">
+      <DependentUpon>Advance Search.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment_List.resx">
       <DependentUpon>Appointment_List.vb</DependentUpon>
