@@ -86,4 +86,16 @@ Public Class Diagnosis_List
         Diagnosis_Grid.Rows.Clear()
         Load_Grid()
     End Sub
+
+    Private Sub Diagnosis_Grid_DoubleClick(sender As Object, e As System.EventArgs) Handles Diagnosis_Grid.DoubleClick
+        '   MessageBox.Show(ChiefComplaint_Grid.Item(0, ChiefComplaint_Grid.SelectedCells(0).RowIndex).Value())
+        ConsultationID = Diagnosis_Grid.Item(3, Diagnosis_Grid.SelectedCells(0).RowIndex).Value()
+
+        'SelectedDiagnosisID = "View"
+
+        Dim fs As New PastDiagnosis
+        fs.ShowDialog()
+
+
+    End Sub
 End Class
