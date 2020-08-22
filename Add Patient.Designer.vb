@@ -25,7 +25,6 @@ Partial Class Add_Patient
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Add_Patient))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Marital_Status_txt = New System.Windows.Forms.ComboBox()
@@ -66,14 +65,15 @@ Partial Class Add_Patient
         Me.Exit_btn = New System.Windows.Forms.Button()
         Me.Save_btn = New System.Windows.Forms.Button()
         Me.Add_New_btn = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -98,15 +98,6 @@ Partial Class Add_Patient
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "General"
         Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Enabled = False
-        Me.PictureBox1.Location = New System.Drawing.Point(713, 426)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'TableLayoutPanel1
         '
@@ -186,9 +177,9 @@ Partial Class Add_Patient
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(34, 240)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(31, 17)
+        Me.Label5.Size = New System.Drawing.Size(36, 17)
         Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Sex"
+        Me.Label5.Text = "Sex*"
         '
         'DOB_txt
         '
@@ -211,9 +202,9 @@ Partial Class Add_Patient
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(34, 160)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 17)
+        Me.Label3.Size = New System.Drawing.Size(81, 17)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Last Name"
+        Me.Label3.Text = "Last Name*"
         '
         'Last_Name_txt
         '
@@ -245,9 +236,9 @@ Partial Class Add_Patient
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(34, 80)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 17)
+        Me.Label2.Size = New System.Drawing.Size(81, 17)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "First Name"
+        Me.Label2.Text = "First Name*"
         '
         'First_Name_txt
         '
@@ -517,6 +508,15 @@ Partial Class Add_Patient
         Me.Add_New_btn.Text = "Add New"
         Me.Add_New_btn.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Location = New System.Drawing.Point(713, 426)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'Add_Patient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -531,7 +531,6 @@ Partial Class Add_Patient
         Me.Text = "Add Patient"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
@@ -540,6 +539,7 @@ Partial Class Add_Patient
         Me.TabPage3.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -40,7 +40,7 @@ Public Class Checked_In_Patients
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.TDM_1.TDM_Index, dbo.TDM_1.int1, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_1.date1, dbo.TDM_1.vc6, dbo.TDM_1.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_1.int1"
+            command.CommandText = "SELECT dbo.TDM_1.TDM_Index, dbo.MSMJ_2.vc10, dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_1.date1, dbo.TDM_1.vc6, dbo.TDM_1.vc5 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_1.int1"
 
             Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
 
