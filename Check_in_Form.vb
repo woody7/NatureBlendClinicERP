@@ -2,6 +2,8 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Imports EnterpriseWrapping
+Imports EnterpriseFramework
+
 
 Public Class Check_in_Form
 
@@ -21,6 +23,7 @@ Public Class Check_in_Form
                 Patient_Name_cbo.DataSource = dt
                 Patient_Name_cbo.DisplayMember = "vcmx1"
                 Patient_Name_cbo.ValueMember = "MSMJ_Index"
+
             End Using
         End Using
     End Sub
@@ -54,8 +57,9 @@ Public Class Check_in_Form
         one = 1
         Dim Check_IN_ID = Patient_ID_Str + "_" + Check_in_date_for_ID + "_" + TimeOfDay.Hour.ToString & TimeOfDay.Minute.ToString & TimeOfDay.Second.ToString
 
+        'Check_IN_Pub = Check_IN_ID
         Consultation_ID = "Cons" + "_" + Check_IN_ID
-
+        'Consultation_ID_Pub = Consultation_ID
         Try
 
             Dim Check_In_Header As New EnterpriseWrapping.TransactionalDetailsMinor.TransactionalDetailsMinor10

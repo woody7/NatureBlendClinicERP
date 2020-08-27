@@ -49,6 +49,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EnterpriseFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EnterpriseFramework.dll</HintPath>
+    </Reference>
     <Reference Include="EnterpriseWrapping">
       <HintPath>..\..\..\..\GitHub\Eye-Clinic-ERP\Eye Clinic ERP\bin\Debug\EnterpriseWrapping.dll</HintPath>
     </Reference>
@@ -93,10 +97,22 @@
     <Compile Include="Advance Search.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AllPatientsInvestigations.Designer.vb">
+      <DependentUpon>AllPatientsInvestigations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllPatientsInvestigations.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Appointment_List.Designer.vb">
       <DependentUpon>Appointment_List.vb</DependentUpon>
     </Compile>
     <Compile Include="Appointment_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPatientsTreatmentPlan.Designer.vb">
+      <DependentUpon>AllPatientsTreatmentPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllPatientsTreatmentPlan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Checked-In Patients.Designer.vb">
@@ -121,6 +137,12 @@
       <DependentUpon>Chief Complaint.vb</DependentUpon>
     </Compile>
     <Compile Include="Chief Complaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connstring.Designer.vb">
+      <DependentUpon>Connstring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Connstring.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultation List.Designer.vb">
@@ -268,8 +290,14 @@
     <EmbeddedResource Include="Advance Search.resx">
       <DependentUpon>Advance Search.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllPatientsInvestigations.resx">
+      <DependentUpon>AllPatientsInvestigations.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Appointment_List.resx">
       <DependentUpon>Appointment_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPatientsTreatmentPlan.resx">
+      <DependentUpon>AllPatientsTreatmentPlan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Checked-In Patients.resx">
       <DependentUpon>Checked-In Patients.vb</DependentUpon>
@@ -282,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chief Complaint.resx">
       <DependentUpon>Chief Complaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connstring.resx">
+      <DependentUpon>Connstring.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultation List.resx">
       <DependentUpon>Consultation List.vb</DependentUpon>

@@ -54,17 +54,6 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0B8VE78\WOODY2;Initial Catalog=NatureBlendClinicERP;Integrate"& _ 
-            "d Security=True")>  _
-        Public ReadOnly Property Myconn() As String
-            Get
-                Return CType(Me("Myconn"),String)
-            End Get
-        End Property
-        
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("")>  _
@@ -74,6 +63,19 @@ Namespace My
             End Get
             Set
                 Me("Current_User") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=LENOVO-PC\SQLEXPRESS;Initial Catalog=NatureBlendClinic;Integrated Sec"& _ 
+            "urity=True")>  _
+        Public Property Myconn() As String
+            Get
+                Return CType(Me("Myconn"),String)
+            End Get
+            Set
+                Me("Myconn") = value
             End Set
         End Property
     End Class

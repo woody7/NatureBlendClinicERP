@@ -3,6 +3,7 @@ Imports System.IO
 Imports System.Data
 Imports System.Data.SqlClient
 Imports EnterpriseWrapping
+Imports EnterpriseFramework
 
 Public Class Take_Vitals
 

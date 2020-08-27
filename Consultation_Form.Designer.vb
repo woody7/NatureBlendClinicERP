@@ -39,6 +39,8 @@ Partial Class Consultation_Form
         Me.Patient_Name_txt = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Refresh_btn = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PatientID_lbl = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.CheckedinPatients_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -177,7 +179,7 @@ Partial Class Consultation_Form
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(738, 87)
+        Me.Button1.Location = New System.Drawing.Point(734, 102)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(302, 42)
         Me.Button1.TabIndex = 3
@@ -223,11 +225,33 @@ Partial Class Consultation_Form
         Me.Refresh_btn.Text = "Refresh"
         Me.Refresh_btn.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(784, 72)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 25)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "ID:"
+        '
+        'PatientID_lbl
+        '
+        Me.PatientID_lbl.AutoSize = True
+        Me.PatientID_lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PatientID_lbl.Location = New System.Drawing.Point(836, 72)
+        Me.PatientID_lbl.Name = "PatientID_lbl"
+        Me.PatientID_lbl.Size = New System.Drawing.Size(71, 25)
+        Me.PatientID_lbl.TabIndex = 9
+        Me.PatientID_lbl.Text = "Label4"
+        '
         'Consultation_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1924, 1000)
+        Me.Controls.Add(Me.PatientID_lbl)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Refresh_btn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Patient_Name_txt)
@@ -261,4 +285,6 @@ Partial Class Consultation_Form
     Friend WithEvents Investigations_btn As System.Windows.Forms.Button
     Friend WithEvents Treatment_Plan_btn As System.Windows.Forms.Button
     Friend WithEvents Next_Appt_btn As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents PatientID_lbl As System.Windows.Forms.Label
 End Class

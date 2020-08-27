@@ -50,6 +50,8 @@ Public Class Consultation_Form
 
         Patient_Name_txt.Text = Specific_Extract_Table("MSMJ_Index", "vcmx1", "MSMJ_2", Patient_ID_Pub)
 
+        PatientID_lbl.Text = Specific_Extract_Table("MSMJ_Index", "vc10", "MSMJ_2", Patient_ID_Pub)
+
     End Sub
 
     Private Sub Load_Grid()
