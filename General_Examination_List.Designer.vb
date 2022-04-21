@@ -68,6 +68,7 @@ Partial Class General_Examination_List
         Me.ClientSize = New System.Drawing.Size(1300, 491)
         Me.Controls.Add(Me.Gen_Exam_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "General_Examination_List"
         Me.Text = "General_Examination_List"
         Me.ToolStrip1.ResumeLayout(False)

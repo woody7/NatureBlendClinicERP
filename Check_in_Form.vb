@@ -156,7 +156,7 @@ Public Class Check_in_Form
             Check_In_Header.time1 = Today.TimeOfDay
             Check_In_Header.time2 = Today.TimeOfDay
             Check_In_Header.time3 = Today.TimeOfDay
-            Check_In_Header.dtime1 = Today.Date
+            Check_In_Header.dtime1 = DateTime.Now
             Check_In_Header.dtime2 = Today.Date
             Check_In_Header.dtime3 = Today.Date
             'Check_In_Header.dtime4 = ""
@@ -252,7 +252,7 @@ Public Class Check_in_Form
             'Check_In.flt5 = ""
             'Check_In.flt6 = ""
             'Check_In.flt7 = ""
-            Check_In.date1 = Today.Date
+            Check_In.date1 = DateTimePicker1.Value
             Check_In.date2 = Today.Date
             Check_In.date3 = Today.Date
             'Check_In.date4 = ""
@@ -262,7 +262,7 @@ Public Class Check_in_Form
             Check_In.time1 = Today.TimeOfDay
             Check_In.time2 = Today.TimeOfDay
             Check_In.time3 = Today.TimeOfDay
-            Check_In.dtime1 = Today.Date
+            Check_In.dtime1 = DateTime.Now
             Check_In.dtime2 = Today.Date
             Check_In.dtime3 = Today.Date
             'Check_In.dtime4 = ""
@@ -284,6 +284,10 @@ Public Class Check_in_Form
 
         Patient_Name_cbo.Text = Nothing
         Notes_txt.Text = Nothing
+
+        'CheckedInPatients_grid.Rows.Clear()
+
+        'Load_Grid()
     End Sub
 
     Function Specific_Extract_Table(ByVal reference_column As String, ByVal results_column As String, ByVal Table As String, ByVal RowID As Integer) As String

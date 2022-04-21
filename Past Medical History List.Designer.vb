@@ -68,6 +68,7 @@ Partial Class Past_Medical_History_List
         Me.ClientSize = New System.Drawing.Size(1201, 488)
         Me.Controls.Add(Me.Past_Medical_Hist_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Past_Medical_History_List"
         Me.Text = "Past_Medical_History_List"
         Me.ToolStrip1.ResumeLayout(False)

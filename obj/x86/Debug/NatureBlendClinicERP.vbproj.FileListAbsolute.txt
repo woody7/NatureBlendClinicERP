@@ -40,3 +40,93 @@ C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicE
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsTreatmentPlan.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsInvestigations.resources
 C:\Users\nanak\OneDrive\Documents\Visual Studio 2010\Projects\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Connstring.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe.config
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.exe
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.xml
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.pdb
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.pdb
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.xml
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\MdiTabControl.dll
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Add_Patient.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Advance_Search.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsInvestigations.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Appointment_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsTreatmentPlan.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Checked_In_Patients.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Check_in_Form.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint_Grid.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Connstring.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_Form.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Diagnosis_form.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Diagnosis_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Form1.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.General_Examination.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.General_Examination_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Investigations_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Investigations.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Resources.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Next_Appointment.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Medical_History_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Ocular_History.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.PastDiagnosis.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Patient_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Take_Vitals.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Treatment_Plan.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.TreatmentPlan_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Vitals_List.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbproj.GenerateResource.Cache
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\RdlCompile.cache
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\RdlCompile.compiled
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Patient_Medical_Reoport.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe.config
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.exe
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.xml
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.pdb
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbprojResolveAssemblyReference.cache
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Add_Patient.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Advance_Search.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsInvestigations.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Appointment_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.AllPatientsTreatmentPlan.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Checked_In_Patients.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Check_in_Form.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint_Grid.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Chief_Complaint.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Connstring.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Consultation_Form.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Diagnosis_form.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Diagnosis_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Form1.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.General_Examination.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.General_Examination_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.HPI_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Investigations_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Investigations.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Resources.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Next_Appointment.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Medical_History_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Past_Ocular_History.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.PastDiagnosis.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Patient_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Patient_Medical_Reoport.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Take_Vitals.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Treatment_Plan.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.TreatmentPlan_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.Vitals_List.resources
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.vbproj.GenerateResource.Cache
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\RdlCompile.cache
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\RdlCompile.compiled
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.exe
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.pdb
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\NatureBlendClinicERP.xml
+D:\WORK\Adroit\Hospital and Clinic Software\NatureBlendClinicERP\NatureBlendClinicERP\bin\Debug\MdiTabControl.dll
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.PatientTreatmentPlanList.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.PatientLabs.resources
+C:\Users\nanak\Documents\GitHub\NatureBlendClinicERP\NatureBlendClinicERP\obj\x86\Debug\NatureBlendClinicERP.DepartmentSaleTracker.resources

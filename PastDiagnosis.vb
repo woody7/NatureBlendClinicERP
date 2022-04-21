@@ -15,6 +15,9 @@ Public Class PastDiagnosis
         PastDiagnosis_Grid.Columns(1).Width = 270
 
         Load_Grid()
+
+        Comments_txt.Text = Specific_Extract_Table_1str("vc2", "vcmx1", "TDM_9", ConsultationID)
+
     End Sub
 
     Private Sub Load_Grid()
@@ -61,4 +64,39 @@ Public Class PastDiagnosis
         End Using
 
     End Sub
+
+
+
+    Function Specific_Extract_Table_1str(ByVal reference_column As String, ByVal results_column As String, ByVal Table As String, ByVal RowID As String) As String
+        Dim info_value As String
+        Dim constr As String = My.Settings.Myconn
+        Dim queryString As String =
+"SELECT " & results_column & " from " & Table & " where " & reference_column & " = '" & RowID & "'"
+        Using connection As New SqlConnection(constr)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = queryString
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader =
+command.ExecuteReader()
+                Do While dataReader.Read()
+                    info_value = dataReader(0).ToString
+                Loop
+                dataReader.Close()
+
+            Catch ex As Exception
+
+            End Try
+
+            connection.Close()
+        End Using
+
+
+        Return info_value
+
+
+
+    End Function
+
+
 End Class

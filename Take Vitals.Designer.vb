@@ -25,10 +25,15 @@ Partial Class Take_Vitals
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Take_Vitals))
         Me.Pulse_Value_txt = New System.Windows.Forms.NumericUpDown()
         Me.Temperature_Value_txt = New System.Windows.Forms.NumericUpDown()
-        Me.Blood_Pressure_Value_txt = New System.Windows.Forms.NumericUpDown()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Receipts_Refresh_btn = New System.Windows.Forms.Button()
+        Me.Invoices_Refresh_btn = New System.Windows.Forms.Button()
+        Me.Receipt_Grid = New System.Windows.Forms.DataGridView()
+        Me.Invoice_Grid = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -47,10 +52,12 @@ Partial Class Take_Vitals
         Me.Height_value_txt = New System.Windows.Forms.NumericUpDown()
         Me.Weight_Value_txt = New System.Windows.Forms.NumericUpDown()
         Me.Calc_BMI_Value_txt = New System.Windows.Forms.NumericUpDown()
+        Me.Blood_Pressure_txtval_txt = New System.Windows.Forms.TextBox()
         CType(Me.Pulse_Value_txt, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Temperature_Value_txt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Blood_Pressure_Value_txt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.Receipt_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Invoice_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.Blood_Oxygen_Sat_txt, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Respiratory_Rate_Vale_txt, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,18 +84,9 @@ Partial Class Take_Vitals
         Me.Temperature_Value_txt.Size = New System.Drawing.Size(189, 22)
         Me.Temperature_Value_txt.TabIndex = 11
         '
-        'Blood_Pressure_Value_txt
-        '
-        Me.Blood_Pressure_Value_txt.DecimalPlaces = 2
-        Me.Blood_Pressure_Value_txt.Location = New System.Drawing.Point(217, 403)
-        Me.Blood_Pressure_Value_txt.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.Blood_Pressure_Value_txt.Name = "Blood_Pressure_Value_txt"
-        Me.Blood_Pressure_Value_txt.Size = New System.Drawing.Size(189, 22)
-        Me.Blood_Pressure_Value_txt.TabIndex = 4
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(526, 611)
+        Me.Button2.Location = New System.Drawing.Point(454, 611)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(213, 45)
         Me.Button2.TabIndex = 2
@@ -97,7 +95,7 @@ Partial Class Take_Vitals
         '
         'History_btn
         '
-        Me.History_btn.Location = New System.Drawing.Point(279, 611)
+        Me.History_btn.Location = New System.Drawing.Point(207, 611)
         Me.History_btn.Name = "History_btn"
         Me.History_btn.Size = New System.Drawing.Size(213, 45)
         Me.History_btn.TabIndex = 4
@@ -106,12 +104,72 @@ Partial Class Take_Vitals
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Receipts_Refresh_btn)
+        Me.GroupBox1.Controls.Add(Me.Invoices_Refresh_btn)
+        Me.GroupBox1.Controls.Add(Me.Receipt_Grid)
+        Me.GroupBox1.Controls.Add(Me.Invoice_Grid)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1038, 665)
+        Me.GroupBox1.Size = New System.Drawing.Size(1332, 706)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(985, 310)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 17)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Receipts"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(985, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(59, 17)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Invoices"
+        '
+        'Receipts_Refresh_btn
+        '
+        Me.Receipts_Refresh_btn.Location = New System.Drawing.Point(1235, 310)
+        Me.Receipts_Refresh_btn.Name = "Receipts_Refresh_btn"
+        Me.Receipts_Refresh_btn.Size = New System.Drawing.Size(75, 23)
+        Me.Receipts_Refresh_btn.TabIndex = 8
+        Me.Receipts_Refresh_btn.Text = "Refresh"
+        Me.Receipts_Refresh_btn.UseVisualStyleBackColor = True
+        '
+        'Invoices_Refresh_btn
+        '
+        Me.Invoices_Refresh_btn.Location = New System.Drawing.Point(1235, 13)
+        Me.Invoices_Refresh_btn.Name = "Invoices_Refresh_btn"
+        Me.Invoices_Refresh_btn.Size = New System.Drawing.Size(75, 23)
+        Me.Invoices_Refresh_btn.TabIndex = 7
+        Me.Invoices_Refresh_btn.Text = "Refresh"
+        Me.Invoices_Refresh_btn.UseVisualStyleBackColor = True
+        '
+        'Receipt_Grid
+        '
+        Me.Receipt_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Receipt_Grid.Location = New System.Drawing.Point(735, 339)
+        Me.Receipt_Grid.Name = "Receipt_Grid"
+        Me.Receipt_Grid.RowTemplate.Height = 24
+        Me.Receipt_Grid.Size = New System.Drawing.Size(575, 235)
+        Me.Receipt_Grid.TabIndex = 6
+        '
+        'Invoice_Grid
+        '
+        Me.Invoice_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Invoice_Grid.Location = New System.Drawing.Point(735, 42)
+        Me.Invoice_Grid.Name = "Invoice_Grid"
+        Me.Invoice_Grid.RowTemplate.Height = 24
+        Me.Invoice_Grid.Size = New System.Drawing.Size(575, 248)
+        Me.Invoice_Grid.TabIndex = 5
         '
         'TableLayoutPanel1
         '
@@ -127,7 +185,6 @@ Partial Class Take_Vitals
         Me.TableLayoutPanel1.Controls.Add(Me.Label7, 0, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.LinkLabel1, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Blood_Pressure_Value_txt, 1, 8)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label14, 0, 0)
@@ -139,7 +196,8 @@ Partial Class Take_Vitals
         Me.TableLayoutPanel1.Controls.Add(Me.Height_value_txt, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Weight_Value_txt, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Calc_BMI_Value_txt, 1, 4)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(261, 39)
+        Me.TableLayoutPanel1.Controls.Add(Me.Blood_Pressure_txtval_txt, 1, 8)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(200, 39)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 11
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
@@ -306,11 +364,18 @@ Partial Class Take_Vitals
         Me.Calc_BMI_Value_txt.Size = New System.Drawing.Size(189, 22)
         Me.Calc_BMI_Value_txt.TabIndex = 16
         '
+        'Blood_Pressure_txtval_txt
+        '
+        Me.Blood_Pressure_txtval_txt.Location = New System.Drawing.Point(217, 403)
+        Me.Blood_Pressure_txtval_txt.Name = "Blood_Pressure_txtval_txt"
+        Me.Blood_Pressure_txtval_txt.Size = New System.Drawing.Size(189, 22)
+        Me.Blood_Pressure_txtval_txt.TabIndex = 17
+        '
         'Take_Vitals
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1025, 703)
+        Me.ClientSize = New System.Drawing.Size(1356, 720)
         Me.Controls.Add(Me.History_btn)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox1)
@@ -319,8 +384,10 @@ Partial Class Take_Vitals
         Me.Text = "Vitals Form"
         CType(Me.Pulse_Value_txt, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Temperature_Value_txt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Blood_Pressure_Value_txt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.Receipt_Grid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Invoice_Grid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.Blood_Oxygen_Sat_txt, System.ComponentModel.ISupportInitialize).EndInit()
@@ -333,7 +400,6 @@ Partial Class Take_Vitals
     End Sub
     Friend WithEvents Pulse_Value_txt As System.Windows.Forms.NumericUpDown
     Friend WithEvents Temperature_Value_txt As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Blood_Pressure_Value_txt As System.Windows.Forms.NumericUpDown
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents History_btn As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -355,4 +421,11 @@ Partial Class Take_Vitals
     Friend WithEvents Height_value_txt As System.Windows.Forms.NumericUpDown
     Friend WithEvents Weight_Value_txt As System.Windows.Forms.NumericUpDown
     Friend WithEvents Calc_BMI_Value_txt As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Receipt_Grid As System.Windows.Forms.DataGridView
+    Friend WithEvents Invoice_Grid As System.Windows.Forms.DataGridView
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Receipts_Refresh_btn As System.Windows.Forms.Button
+    Friend WithEvents Invoices_Refresh_btn As System.Windows.Forms.Button
+    Friend WithEvents Blood_Pressure_txtval_txt As System.Windows.Forms.TextBox
 End Class

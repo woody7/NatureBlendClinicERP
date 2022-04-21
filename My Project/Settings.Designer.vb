@@ -68,8 +68,8 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=LENOVO-PC\SQLEXPRESS;Initial Catalog=NatureBlendClinic;Integrated Sec"& _ 
-            "urity=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TKNRTN5\SQLEXPRESS;Initial Catalog=Chaba_ERP;Integrated Secur"& _ 
+            "ity=True")>  _
         Public Property Myconn() As String
             Get
                 Return CType(Me("Myconn"),String)
@@ -77,6 +77,17 @@ Namespace My
             Set
                 Me("Myconn") = value
             End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TKNRTN5\SQLEXPRESS;Initial Catalog=Chaba_ERP;Integrated Secur"& _ 
+            "ity=True")>  _
+        Public ReadOnly Property ClinicERPConnectionString() As String
+            Get
+                Return CType(Me("ClinicERPConnectionString"),String)
+            End Get
         End Property
     End Class
 End Namespace

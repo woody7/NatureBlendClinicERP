@@ -27,6 +27,32 @@ Public Class Take_Vitals
                 'Investigations_cbo.ShowCheckBox = True
                 'Investigations_cbo.DisplayMode = DisplayMode.DelimiterMode
 
+                Invoice_Grid.ColumnCount = 7
+
+                Invoice_Grid.Columns(0).Name = "Invoice Date"
+                Invoice_Grid.Columns(1).Name = "Invoice ID"
+                Invoice_Grid.Columns(2).Name = "Stock/Service"
+                Invoice_Grid.Columns(3).Name = "Customer"
+                Invoice_Grid.Columns(4).Name = "Net Amount"
+                Invoice_Grid.Columns(5).Name = "First Name"
+                Invoice_Grid.Columns(6).Name = "Last Name"
+
+                Load_Invoice_Grid()
+
+
+                Receipt_Grid.ColumnCount = 7
+
+                Receipt_Grid.Columns(0).Name = "Receipt Date"
+                Receipt_Grid.Columns(1).Name = "Receipt ID"
+                Receipt_Grid.Columns(2).Name = "Stock/Service"
+                Receipt_Grid.Columns(3).Name = "Customer"
+                Receipt_Grid.Columns(4).Name = "Net Amount"
+                Receipt_Grid.Columns(5).Name = "First Name"
+                Receipt_Grid.Columns(6).Name = "Last Name"
+
+                Load_Receipt_Grid()
+
+
 
 
             Case "View"
@@ -47,7 +73,7 @@ Public Class Take_Vitals
                 Weight_Value_txt.Enabled = False
                 Blood_Oxygen_Sat_txt.Enabled = False
 
-                Blood_Pressure_Value_txt.Enabled = False
+                Blood_Pressure_txtval_txt.Enabled = False
 
                 Using connection As New SqlConnection(My.Settings.Myconn)
                     Dim command As SqlCommand = connection.CreateCommand()
@@ -70,10 +96,10 @@ Public Class Take_Vitals
                             Temperature_Value_txt.Text = dataReader(13)
                             Pulse_Value_txt.Text = dataReader(14)
                             Respiratory_Rate_Vale_txt.Text = dataReader(15)
-                            Blood_Pressure_Value_txt.Text = dataReader(16)
+                            Blood_Pressure_txtval_txt.Text = dataReader(3)
                             Blood_Oxygen_Sat_txt.Text = dataReader(17)
                             Temperature_Value_txt.Text = dataReader(18)
-
+                            Blood_Pressure_txtval_txt.Text = dataReader(3)
 
                         Loop
 
@@ -115,7 +141,7 @@ Public Class Take_Vitals
             Vitals.vcmx10 = ""
             Vitals.vc1 = Check_IN_Pub
             Vitals.vc2 = Consultation_ID_Pub
-            Vitals.vc3 = ""
+            Vitals.vc3 = Blood_Pressure_txtval_txt.Text
             Vitals.vc4 = ""
             Vitals.vc5 = My.Settings.Current_User
             Vitals.vc6 = ""
@@ -164,7 +190,7 @@ Public Class Take_Vitals
             Vitals.mny4 = Temperature_Value_txt.Value
             Vitals.mny5 = Pulse_Value_txt.Value
             Vitals.mny6 = Respiratory_Rate_Vale_txt.Value
-            Vitals.mny7 = Blood_Pressure_Value_txt.Value
+            Vitals.mny7 = 0
             Vitals.mny8 = Blood_Oxygen_Sat_txt.Value
             Vitals.mny9 = 0
             Vitals.mny10 = 0
@@ -222,9 +248,9 @@ Public Class Take_Vitals
         Temperature_Value_txt.Value = 0
         Pulse_Value_txt.Value = 0
         Respiratory_Rate_Vale_txt.Value = 0
-        Blood_Pressure_Value_txt.Value = 0
-        Blood_Oxygen_Sat_txt.Value = 0
 
+        Blood_Oxygen_Sat_txt.Value = 0
+        Blood_Pressure_txtval_txt.Text = ""
 
 
     End Sub
@@ -310,5 +336,139 @@ command.ExecuteReader()
         BMI = WeightforBMI / (HeightforBMI * HeightforBMI)
 
         Calc_BMI_Value_txt.Value = BMI
+    End Sub
+
+    Private Sub Load_Invoice_Grid()
+
+        Dim PatientCompany As String
+        PatientCompany = Specific_Extract_Table("MSMJ_Index", "vc10", "MSMJ_2", Patient_ID_Pub)
+
+        Dim i As Integer = 0
+
+        Invoice_Grid.ColumnCount = 7
+
+        Invoice_Grid.Columns(0).Name = "Invoice Date"
+        Invoice_Grid.Columns(1).Name = "Invoice ID"
+        Invoice_Grid.Columns(2).Name = "Stock/Service"
+        Invoice_Grid.Columns(3).Name = "Customer"
+        Invoice_Grid.Columns(4).Name = "Net Amount"
+        Invoice_Grid.Columns(5).Name = "First Name"
+        Invoice_Grid.Columns(6).Name = "Last Name"
+
+        Using connection As New SqlConnection(My.Settings.Myconn)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = "SELECT dbo.AR_Invoice_Details.Invoice_Date, dbo.AR_Invoice_Details.InvoiceID, dbo.AR_Invoice_Details.Stock_Name, dbo.AR_Invoice_Details.Customer, dbo.AR_Invoice_Details.Net, dbo.Customers.First_Name, dbo.Customers.Last_Name FROM  dbo.AR_Invoice_Details INNER JOIN dbo.Customers ON dbo.AR_Invoice_Details.Customer LIKE dbo.Customers.Company_Name Where dbo.AR_Invoice_Details.Customer like " & "'" & PatientCompany & "'" & " order by dbo.AR_Invoice_Details.Invoice_Date desc"
+
+
+            'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
+
+
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader =
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+                    Me.Invoice_Grid.Rows.Add(dataReader(0), dataReader(1), dataReader(2), dataReader(3), dataReader(4), dataReader(5), dataReader(6))
+
+                    i = i + 1
+
+
+
+
+
+
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                ' MessageBox.Show(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
+
+
+
+    End Sub
+
+    Private Sub Load_Receipt_Grid()
+
+        Dim PatientCompany As String
+        PatientCompany = Specific_Extract_Table("MSMJ_Index", "vc10", "MSMJ_2", Patient_ID_Pub)
+
+
+        Dim i As Integer = 0
+
+        Receipt_Grid.ColumnCount = 7
+
+        Receipt_Grid.Columns(0).Name = "Receipt Date"
+        Receipt_Grid.Columns(1).Name = "Receipt ID"
+        Receipt_Grid.Columns(2).Name = "Stock/Service"
+        Receipt_Grid.Columns(3).Name = "Customer"
+        Receipt_Grid.Columns(4).Name = "Net Amount"
+        Receipt_Grid.Columns(5).Name = "First Name"
+        Receipt_Grid.Columns(6).Name = "Last Name"
+
+        Using connection As New SqlConnection(My.Settings.Myconn)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = "SELECT dbo.AR_Receipt_Details.Receipt_Date, dbo.AR_Receipt_Details.ReceiptID, dbo.AR_Receipt_Details.Stock_Name, dbo.AR_Receipt_Details.Customer, dbo.AR_Receipt_Details.Net, dbo.Customers.First_Name, dbo.Customers.Last_Name FROM  dbo.AR_Receipt_Details INNER JOIN dbo.Customers ON dbo.AR_Receipt_Details.Customer LIKE dbo.Customers.Company_Name Where dbo.AR_Receipt_Details.Customer like " & "'" & PatientCompany & "'" & " order by dbo.AR_Receipt_Details.Receipt_Date desc"
+
+
+            'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
+
+
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader =
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+                    Me.Receipt_Grid.Rows.Add(dataReader(0), dataReader(1), dataReader(2), dataReader(3), dataReader(4), dataReader(5), dataReader(6))
+
+                    i = i + 1
+
+
+
+
+
+
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                ' MessageBox.Show(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
+
+
+
+    End Sub
+
+
+    Private Sub Invoices_Refresh_btn_Click(sender As System.Object, e As System.EventArgs) Handles Invoices_Refresh_btn.Click
+        Invoice_Grid.Rows.Clear()
+        Load_Invoice_Grid()
+    End Sub
+
+    Private Sub Receipts_Refresh_btn_Click(sender As System.Object, e As System.EventArgs) Handles Receipts_Refresh_btn.Click
+
+        Receipt_Grid.Rows.Clear()
+        Load_Receipt_Grid()
+
     End Sub
 End Class

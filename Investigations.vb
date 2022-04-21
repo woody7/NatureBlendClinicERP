@@ -5,7 +5,13 @@ Imports EnterpriseWrapping
 Public Class Investigations
 
     Private Sub Investigations_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-                Select InvestigationsDisplayMode
+
+
+
+        Investigations_list.SelectionMode = SelectionMode.MultiSimple
+
+
+        Select Case InvestigationsDisplayMode
 
             Case "Add"
 
@@ -298,5 +304,21 @@ Public Class Investigations
     End Sub
 
 
+
+    Private Sub Investigations_list_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Investigations_list.KeyDown
+
+
+        If e.Control AndAlso e.KeyCode = Keys.C Then
+            Dim copy_buffer As New System.Text.StringBuilder
+            For Each item As Object In Investigations_list.SelectedItems
+                copy_buffer.AppendLine(item.ToString)
+
+            Next
+            If copy_buffer.Length > 0 Then
+                Clipboard.SetText(copy_buffer.ToString)
+            End If
+        End If
+
+    End Sub
 
 End Class

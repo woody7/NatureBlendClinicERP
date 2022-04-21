@@ -7,14 +7,16 @@ Public Class Treatment_Plan
 
     Private Sub Treatment_Plan_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
+        TeatmentPlans_List.SelectionMode = SelectionMode.MultiSimple
+
         Select Case TreatmentPlanDisplayMode
 
             Case "Add"
 
                 Try
 
-               
-                Using con As New SqlConnection(My.Settings.Myconn)
+
+                    Using con As New SqlConnection(My.Settings.Myconn)
                         Using com As New SqlCommand("SELECT [CH_Index], [vc1] FROM [CH_7]", con)
                             con.Open()
 
@@ -24,7 +26,7 @@ Public Class Treatment_Plan
                             TreatementPlan_cbo.DisplayMember = "vc1"
                             TreatementPlan_cbo.ValueMember = "CH_Index"
                         End Using
-                End Using
+                    End Using
 
                 Catch ex As Exception
 
@@ -303,6 +305,23 @@ Public Class Treatment_Plan
         Dim Treatp_List As New TreatmentPlan_List
 
         Treatp_List.Show()
+
+    End Sub
+
+
+    Private Sub TeatmentPlans_List_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TeatmentPlans_List.KeyDown
+
+
+        If e.Control AndAlso e.KeyCode = Keys.C Then
+            Dim copy_buffer As New System.Text.StringBuilder
+            For Each item As Object In TeatmentPlans_List.SelectedItems
+                copy_buffer.AppendLine(item.ToString)
+
+            Next
+            If copy_buffer.Length > 0 Then
+                Clipboard.SetText(copy_buffer.ToString)
+            End If
+        End If
 
     End Sub
 End Class

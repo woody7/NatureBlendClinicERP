@@ -97,6 +97,7 @@ Partial Class AllPatientsInvestigations
         Me.ClientSize = New System.Drawing.Size(899, 452)
         Me.Controls.Add(Me.AllPatientsInvestigations_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AllPatientsInvestigations"
         Me.Text = "AllPatientsInvestigations"
         Me.ToolStrip1.ResumeLayout(False)

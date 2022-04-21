@@ -30,63 +30,69 @@ Partial Class Investigations
         Me.btn_remove = New System.Windows.Forms.Button()
         Me.btn_Result = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.History_btn = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Remarks_txt = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Remarks_txt = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Investigations_cbo
         '
         Me.Investigations_cbo.FormattingEnabled = True
-        Me.Investigations_cbo.Location = New System.Drawing.Point(113, 31)
+        Me.Investigations_cbo.Location = New System.Drawing.Point(85, 25)
+        Me.Investigations_cbo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Investigations_cbo.Name = "Investigations_cbo"
-        Me.Investigations_cbo.Size = New System.Drawing.Size(255, 24)
+        Me.Investigations_cbo.Size = New System.Drawing.Size(192, 21)
         Me.Investigations_cbo.TabIndex = 0
         '
         'Investigations_list
         '
         Me.Investigations_list.FormattingEnabled = True
-        Me.Investigations_list.ItemHeight = 16
-        Me.Investigations_list.Location = New System.Drawing.Point(113, 78)
+        Me.Investigations_list.Location = New System.Drawing.Point(85, 63)
+        Me.Investigations_list.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Investigations_list.Name = "Investigations_list"
-        Me.Investigations_list.Size = New System.Drawing.Size(352, 260)
+        Me.Investigations_list.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
+        Me.Investigations_list.Size = New System.Drawing.Size(265, 212)
         Me.Investigations_list.TabIndex = 1
         '
         'Add_btn
         '
-        Me.Add_btn.Location = New System.Drawing.Point(388, 27)
+        Me.Add_btn.Location = New System.Drawing.Point(291, 22)
+        Me.Add_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Add_btn.Name = "Add_btn"
-        Me.Add_btn.Size = New System.Drawing.Size(77, 31)
+        Me.Add_btn.Size = New System.Drawing.Size(58, 25)
         Me.Add_btn.TabIndex = 2
         Me.Add_btn.Text = "Add"
         Me.Add_btn.UseVisualStyleBackColor = True
         '
         'Save_btn
         '
-        Me.Save_btn.Location = New System.Drawing.Point(288, 557)
+        Me.Save_btn.Location = New System.Drawing.Point(216, 453)
+        Me.Save_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Save_btn.Name = "Save_btn"
-        Me.Save_btn.Size = New System.Drawing.Size(80, 31)
+        Me.Save_btn.Size = New System.Drawing.Size(60, 25)
         Me.Save_btn.TabIndex = 3
         Me.Save_btn.Text = "Save"
         Me.Save_btn.UseVisualStyleBackColor = True
         '
         'btn_remove
         '
-        Me.btn_remove.Location = New System.Drawing.Point(171, 360)
+        Me.btn_remove.Location = New System.Drawing.Point(128, 292)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_remove.Name = "btn_remove"
-        Me.btn_remove.Size = New System.Drawing.Size(81, 31)
+        Me.btn_remove.Size = New System.Drawing.Size(61, 25)
         Me.btn_remove.TabIndex = 4
         Me.btn_remove.Text = "Remove"
         Me.btn_remove.UseVisualStyleBackColor = True
         '
         'btn_Result
         '
-        Me.btn_Result.Location = New System.Drawing.Point(288, 360)
+        Me.btn_Result.Location = New System.Drawing.Point(216, 292)
+        Me.btn_Result.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_Result.Name = "btn_Result"
-        Me.btn_Result.Size = New System.Drawing.Size(82, 31)
+        Me.btn_Result.Size = New System.Drawing.Size(62, 25)
         Me.btn_Result.TabIndex = 5
         Me.btn_Result.Text = "Reset"
         Me.btn_Result.UseVisualStyleBackColor = True
@@ -104,63 +110,71 @@ Partial Class Investigations
         Me.GroupBox1.Controls.Add(Me.btn_remove)
         Me.GroupBox1.Controls.Add(Me.btn_Result)
         Me.GroupBox1.Controls.Add(Me.Save_btn)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 23)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 19)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(608, 603)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(456, 490)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
-        '
-        'History_btn
-        '
-        Me.History_btn.Location = New System.Drawing.Point(171, 557)
-        Me.History_btn.Name = "History_btn"
-        Me.History_btn.Size = New System.Drawing.Size(81, 31)
-        Me.History_btn.TabIndex = 6
-        Me.History_btn.Text = "History"
-        Me.History_btn.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 17)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Items"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 17)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Selected Items"
-        '
-        'Remarks_txt
-        '
-        Me.Remarks_txt.Location = New System.Drawing.Point(113, 407)
-        Me.Remarks_txt.Multiline = True
-        Me.Remarks_txt.Name = "Remarks_txt"
-        Me.Remarks_txt.Size = New System.Drawing.Size(352, 134)
-        Me.Remarks_txt.TabIndex = 9
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 407)
+        Me.Label3.Location = New System.Drawing.Point(10, 331)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 17)
+        Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Remarks"
         '
+        'Remarks_txt
+        '
+        Me.Remarks_txt.Location = New System.Drawing.Point(85, 331)
+        Me.Remarks_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Remarks_txt.Multiline = True
+        Me.Remarks_txt.Name = "Remarks_txt"
+        Me.Remarks_txt.Size = New System.Drawing.Size(265, 110)
+        Me.Remarks_txt.TabIndex = 9
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(4, 63)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 13)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Selected Items"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(5, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Items"
+        '
+        'History_btn
+        '
+        Me.History_btn.Location = New System.Drawing.Point(128, 453)
+        Me.History_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.History_btn.Name = "History_btn"
+        Me.History_btn.Size = New System.Drawing.Size(61, 25)
+        Me.History_btn.TabIndex = 6
+        Me.History_btn.Text = "History"
+        Me.History_btn.UseVisualStyleBackColor = True
+        '
         'Investigations
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(632, 638)
+        Me.ClientSize = New System.Drawing.Size(474, 518)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Investigations"
         Me.Text = "Investigations"
         Me.GroupBox1.ResumeLayout(False)

@@ -68,6 +68,7 @@ Partial Class Vitals_List
         Me.ClientSize = New System.Drawing.Size(940, 497)
         Me.Controls.Add(Me.Vitals_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Vitals_List"
         Me.Text = "Vitals_List"
         Me.ToolStrip1.ResumeLayout(False)

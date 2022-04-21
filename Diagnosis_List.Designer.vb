@@ -68,6 +68,7 @@ Partial Class Diagnosis_List
         Me.ClientSize = New System.Drawing.Size(1130, 478)
         Me.Controls.Add(Me.Diagnosis_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Diagnosis_List"
         Me.Text = "Diagnosis_List"
         Me.ToolStrip1.ResumeLayout(False)

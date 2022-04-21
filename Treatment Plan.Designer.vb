@@ -31,18 +31,19 @@ Partial Class Treatment_Plan
         Me.Button1 = New System.Windows.Forms.Button()
         Me.History_btn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Treatment_Remarks_txt = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Treatment_Remarks_txt = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Add_btn
         '
-        Me.Add_btn.Location = New System.Drawing.Point(412, 51)
+        Me.Add_btn.Location = New System.Drawing.Point(309, 41)
+        Me.Add_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Add_btn.Name = "Add_btn"
-        Me.Add_btn.Size = New System.Drawing.Size(77, 31)
+        Me.Add_btn.Size = New System.Drawing.Size(58, 25)
         Me.Add_btn.TabIndex = 6
         Me.Add_btn.Text = "Add"
         Me.Add_btn.UseVisualStyleBackColor = True
@@ -50,52 +51,58 @@ Partial Class Treatment_Plan
         'TeatmentPlans_List
         '
         Me.TeatmentPlans_List.FormattingEnabled = True
-        Me.TeatmentPlans_List.ItemHeight = 16
-        Me.TeatmentPlans_List.Location = New System.Drawing.Point(112, 108)
+        Me.TeatmentPlans_List.Location = New System.Drawing.Point(84, 88)
+        Me.TeatmentPlans_List.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TeatmentPlans_List.Name = "TeatmentPlans_List"
-        Me.TeatmentPlans_List.Size = New System.Drawing.Size(366, 244)
+        Me.TeatmentPlans_List.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
+        Me.TeatmentPlans_List.Size = New System.Drawing.Size(276, 199)
         Me.TeatmentPlans_List.TabIndex = 5
         '
         'TreatementPlan_cbo
         '
         Me.TreatementPlan_cbo.FormattingEnabled = True
-        Me.TreatementPlan_cbo.Location = New System.Drawing.Point(123, 55)
+        Me.TreatementPlan_cbo.Location = New System.Drawing.Point(92, 45)
+        Me.TreatementPlan_cbo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TreatementPlan_cbo.Name = "TreatementPlan_cbo"
-        Me.TreatementPlan_cbo.Size = New System.Drawing.Size(262, 24)
+        Me.TreatementPlan_cbo.Size = New System.Drawing.Size(198, 21)
         Me.TreatementPlan_cbo.TabIndex = 4
         '
         'btn_Result
         '
-        Me.btn_Result.Location = New System.Drawing.Point(307, 373)
+        Me.btn_Result.Location = New System.Drawing.Point(230, 303)
+        Me.btn_Result.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_Result.Name = "btn_Result"
-        Me.btn_Result.Size = New System.Drawing.Size(82, 31)
+        Me.btn_Result.Size = New System.Drawing.Size(62, 25)
         Me.btn_Result.TabIndex = 10
         Me.btn_Result.Text = "Reset"
         Me.btn_Result.UseVisualStyleBackColor = True
         '
         'btn_remove
         '
-        Me.btn_remove.Location = New System.Drawing.Point(183, 373)
+        Me.btn_remove.Location = New System.Drawing.Point(137, 303)
+        Me.btn_remove.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_remove.Name = "btn_remove"
-        Me.btn_remove.Size = New System.Drawing.Size(81, 31)
+        Me.btn_remove.Size = New System.Drawing.Size(61, 25)
         Me.btn_remove.TabIndex = 9
         Me.btn_remove.Text = "Remove"
         Me.btn_remove.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(307, 594)
+        Me.Button1.Location = New System.Drawing.Point(230, 483)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 31)
+        Me.Button1.Size = New System.Drawing.Size(60, 25)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'History_btn
         '
-        Me.History_btn.Location = New System.Drawing.Point(183, 594)
+        Me.History_btn.Location = New System.Drawing.Point(137, 483)
+        Me.History_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.History_btn.Name = "History_btn"
-        Me.History_btn.Size = New System.Drawing.Size(81, 31)
+        Me.History_btn.Size = New System.Drawing.Size(61, 25)
         Me.History_btn.TabIndex = 11
         Me.History_btn.Text = "History"
         Me.History_btn.UseVisualStyleBackColor = True
@@ -111,56 +118,63 @@ Partial Class Treatment_Plan
         Me.GroupBox1.Controls.Add(Me.TeatmentPlans_List)
         Me.GroupBox1.Controls.Add(Me.btn_Result)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(584, 672)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(438, 546)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
-        '
-        'Treatment_Remarks_txt
-        '
-        Me.Treatment_Remarks_txt.Location = New System.Drawing.Point(112, 435)
-        Me.Treatment_Remarks_txt.Multiline = True
-        Me.Treatment_Remarks_txt.Name = "Treatment_Remarks_txt"
-        Me.Treatment_Remarks_txt.Size = New System.Drawing.Size(366, 127)
-        Me.Treatment_Remarks_txt.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 435)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 17)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Remarks"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 108)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 17)
-        Me.Label2.TabIndex = 12
-        Me.Label2.Text = "Selected Items"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 32)
+        Me.Label3.Location = New System.Drawing.Point(4, 26)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 17)
+        Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Items"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(4, 88)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 13)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Selected Items"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(4, 353)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Remarks"
+        '
+        'Treatment_Remarks_txt
+        '
+        Me.Treatment_Remarks_txt.Location = New System.Drawing.Point(84, 353)
+        Me.Treatment_Remarks_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Treatment_Remarks_txt.Multiline = True
+        Me.Treatment_Remarks_txt.Name = "Treatment_Remarks_txt"
+        Me.Treatment_Remarks_txt.Size = New System.Drawing.Size(276, 104)
+        Me.Treatment_Remarks_txt.TabIndex = 0
+        '
         'Treatment_Plan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(607, 696)
+        Me.ClientSize = New System.Drawing.Size(455, 566)
         Me.Controls.Add(Me.Add_btn)
         Me.Controls.Add(Me.TreatementPlan_cbo)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Treatment_Plan"
         Me.Text = "Add Treatment Plan"
         Me.GroupBox1.ResumeLayout(False)

@@ -6,7 +6,163 @@ NatureBlendClinicERP
 </name>
 </assembly>
 <members>
-<member name="P:NatureBlendClinicERP.My.Resources.Resources.ResourceManager">
+<member name="T:NatureBlendClinicERP.Chief_Complaint_dtst.Chief_Complaint_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtst.Chief_Complaint_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtst.Chief_Complaint_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.Chief_Complaint_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Chief_Complaint_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Chief_Complaint_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Chief_Complaint_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Chief_Complaint_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Chief_Complaint_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtst.HPI_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtst.HPI_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtst.HPI_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtstTableAdapters.HPI_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.HPI_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.HPI_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.HPI_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.HPI_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.HPI_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtst.Invest_Remarks_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtst.Invest_Remarks_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtst.Invest_Remarks_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.Invest_Remarks_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Investigations_remarks_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Investigations_remarks_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Investigations_remarks_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Investigations_remarks_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_remarks_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:NatureBlendClinicERP.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -22,6 +178,474 @@ NatureBlendClinicERP
 </member><member name="T:NatureBlendClinicERP.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtst.Past_Med_History_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtst.Past_Med_History_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtst.Past_Med_History_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.Past_Med_History_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Past_Medical_History_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Past_Medical_History_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Past_Medical_History_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Past_Medical_History_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Past_Medical_History_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtst.Gen_Exam_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtst.Gen_Exam_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtst.Gen_Exam_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.Gen_Exam_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Gen_Exam_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Gen_Exam_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Gen_Exam_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Gen_Exam_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Gen_Exam_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtst.Treat_Plan_Remarks_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtst.Treat_Plan_Remarks_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtst.Treat_Plan_Remarks_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.Treat_Plan_Remarks_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Treatment_Plan_Remarks_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Treatment_Plan_Remarks_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Treatment_Plan_Remarks_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Treatment_Plan_Remarks_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_Remarks_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtst.Diagnoses_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtst.Diagnoses_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtst.Diagnoses_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.Diagnoses_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Diagnoses_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Diagnoses_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Diagnoses_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Diagnoses_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Diagnoses_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSet.MSEXTMJ_1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSet.MSEXTMJ_1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSet.MSEXTMJ_1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.MSEXTMJ_1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.DeptSalesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.DeptSalesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.DeptSalesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.DeptSalesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.DeptSalesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtst.Treat_plan_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtst.Treat_plan_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtst.Treat_plan_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.Treat_plan_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Treatment_Plan_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Treatment_Plan_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Treatment_Plan_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Treatment_Plan_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Treatment_Plan_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtst.Next_Appt_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtst.Next_Appt_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtst.Next_Appt_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.Next_Appt_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Next_Appt_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Next_Appt_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Next_Appt_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Next_Appt_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Next_Appt_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtst.Investigations_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtst.Investigations_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtst.Investigations_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtstTableAdapters.Investigations_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Investigations_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Investigations_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Investigations_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Investigations_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Investigations_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtst.Vitals_DataTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtst.Vitals_DataTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtst.Vitals_DataTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.Vitals_DataTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.UpdateUpdatedRows(NatureBlendClinicERP.Patient_Vitals_dtst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.UpdateInsertedRows(NatureBlendClinicERP.Patient_Vitals_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.UpdateDeletedRows(NatureBlendClinicERP.Patient_Vitals_dtst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.UpdateAll(NatureBlendClinicERP.Patient_Vitals_dtst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NatureBlendClinicERP.Patient_Vitals_dtstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
 </members>

@@ -95,7 +95,11 @@ Public Class Patient_List
     Private Sub Add_btn_Click(sender As System.Object, e As System.EventArgs) Handles Add_btn.Click
         PatientDisplayMode = "Add"
         Dim Patient As New Add_Patient
-        Patient.Show()
+        Patient.ShowDialog()
+
+        Patients_grid.Rows.Clear()
+        Load_Grid()
+
     End Sub
 
     Private Sub Refresh_btn_Click(sender As System.Object, e As System.EventArgs) Handles Refresh_btn.Click

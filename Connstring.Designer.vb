@@ -22,6 +22,7 @@ Partial Class Connstring
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Connstring))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Save_btn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -49,6 +50,7 @@ Partial Class Connstring
         Me.ClientSize = New System.Drawing.Size(670, 281)
         Me.Controls.Add(Me.Save_btn)
         Me.Controls.Add(Me.TextBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Connstring"
         Me.Text = "Connstring"
         Me.ResumeLayout(False)

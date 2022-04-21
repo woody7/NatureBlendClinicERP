@@ -68,6 +68,7 @@ Partial Class HPI_List
         Me.ClientSize = New System.Drawing.Size(955, 438)
         Me.Controls.Add(Me.HPI_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "HPI_List"
         Me.Text = "HPI_List"
         CType(Me.HPI_Grid, System.ComponentModel.ISupportInitialize).EndInit()

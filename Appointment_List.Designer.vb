@@ -68,6 +68,7 @@ Partial Class Appointment_List
         Me.ClientSize = New System.Drawing.Size(1048, 481)
         Me.Controls.Add(Me.Appointment_Grid)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Appointment_List"
         Me.Text = "Appointment_List"
         Me.ToolStrip1.ResumeLayout(False)

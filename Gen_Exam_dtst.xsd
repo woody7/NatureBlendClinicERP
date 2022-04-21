@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Gen_Exam_dtst" targetNamespace="http://tempuri.org/Gen_Exam_dtst.xsd" xmlns:mstns="http://tempuri.org/Gen_Exam_dtst.xsd" xmlns="http://tempuri.org/Gen_Exam_dtst.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ClinicERPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClinicERPConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NatureBlendClinicERP.My.MySettings.GlobalReference.Default.ClinicERPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Gen_Exam_DataTableTableAdapter" GeneratorDataComponentClassName="Gen_Exam_DataTableTableAdapter" Name="Gen_Exam_DataTable" UserDataComponentName="Gen_Exam_DataTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicERPConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TDM_10.vc2, MTM_3.vcmx1, MTM_3.int1
+FROM     MTM_3 INNER JOIN
+                  TDM_10 ON MTM_3.vc2 = TDM_10.vc2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="vc2" DataSetColumn="vc2" />
+              <Mapping SourceColumn="vcmx1" DataSetColumn="vcmx1" />
+              <Mapping SourceColumn="int1" DataSetColumn="int1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Gen_Exam_dtst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Gen_Exam_dtst" msprop:Generator_UserDSName="Gen_Exam_dtst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Gen_Exam_DataTable" msprop:Generator_TableClassName="Gen_Exam_DataTableDataTable" msprop:Generator_TableVarName="tableGen_Exam_DataTable" msprop:Generator_TablePropName="Gen_Exam_DataTable" msprop:Generator_RowDeletingName="Gen_Exam_DataTableRowDeleting" msprop:Generator_RowChangingName="Gen_Exam_DataTableRowChanging" msprop:Generator_RowEvHandlerName="Gen_Exam_DataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="Gen_Exam_DataTableRowDeleted" msprop:Generator_UserTableName="Gen_Exam_DataTable" msprop:Generator_RowChangedName="Gen_Exam_DataTableRowChanged" msprop:Generator_RowEvArgName="Gen_Exam_DataTableRowChangeEvent" msprop:Generator_RowClassName="Gen_Exam_DataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vc2" msprop:Generator_ColumnVarNameInTable="columnvc2" msprop:Generator_ColumnPropNameInRow="vc2" msprop:Generator_ColumnPropNameInTable="vc2Column" msprop:Generator_UserColumnName="vc2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vcmx1" msprop:Generator_ColumnVarNameInTable="columnvcmx1" msprop:Generator_ColumnPropNameInRow="vcmx1" msprop:Generator_ColumnPropNameInTable="vcmx1Column" msprop:Generator_UserColumnName="vcmx1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="int1" msprop:Generator_ColumnVarNameInTable="columnint1" msprop:Generator_ColumnPropNameInRow="int1" msprop:Generator_ColumnPropNameInTable="int1Column" msprop:Generator_UserColumnName="int1" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

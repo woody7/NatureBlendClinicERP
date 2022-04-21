@@ -52,23 +52,74 @@ Public Class Consultation_Form
 
         PatientID_lbl.Text = Specific_Extract_Table("MSMJ_Index", "vc10", "MSMJ_2", Patient_ID_Pub)
 
+        Dim PatientDOB As Date
+
+        PatientDOB = Specific_Extract_Table("MSMJ_Index", "date2", "MSMJ_2", Patient_ID_Pub)
+
+        Label5.Text = ComputeAge(PatientDOB)
+
+
+        Using connection As New SqlConnection(My.Settings.Myconn)
+            Dim command As SqlCommand = connection.CreateCommand()
+            command.CommandText = "SELECT TD_Index, vc1, vc2, vc3, vc4, vc6, flt1, flt2, flt3, flt4, mny1, mny2, mny3, mny4, mny5, mny6, mny7, mny8 FROM TD_2 where vc2 = '" & Consultation_ID_Pub & "'"
+
+            'Dim sql As String = "Select Count (TDM_Index) from dbo.TDM_1"
+
+            Try
+                connection.Open()
+                Dim dataReader As SqlDataReader =
+                 command.ExecuteReader()
+                Do While dataReader.Read()
+
+
+
+
+                    Height_lbl.Text = Math.Round(dataReader(10), 2)
+                    weight_lbl.Text = Math.Round(dataReader(11), 2)
+                    BMI_lbl.Text = Math.Round(dataReader(12), 2)
+                    Temp_lbl.Text = Math.Round(dataReader(13), 2)
+                    pulse_lbl.Text = Math.Round(dataReader(14), 2)
+                    respiratory_rate_lbl.Text = Math.Round(dataReader(15), 2)
+                    blood_pressure_lbl.Text = dataReader(3)
+                    BOS_lbl.Text = Math.Round(dataReader(17), 2)
+
+                    
+                    'Blood_Oxygen_Sat_txt.Text = dataReader(17)
+                    'Temperature_Value_txt.Text = dataReader(18)
+                    'Blood_Pressure_txtval_txt.Text = dataReader(3)
+
+
+                Loop
+
+                dataReader.Close()
+
+            Catch ex As Exception
+                ' MessageBox.Show(ex.Message)
+            End Try
+
+            connection.Close()
+        End Using
+
+
     End Sub
 
     Private Sub Load_Grid()
 
         Dim i As Integer = 0
+        Dim Checkindatetime As Date
 
-        CheckedinPatients_Grid.ColumnCount = 5
+        CheckedinPatients_Grid.ColumnCount = 3
 
         CheckedinPatients_Grid.Columns(0).Name = "Patient Name"
-        CheckedinPatients_Grid.Columns(1).Name = "First Name"
-        CheckedinPatients_Grid.Columns(2).Name = "Last Name"
-        CheckedinPatients_Grid.Columns(3).Name = "Check In Date"
-        CheckedinPatients_Grid.Columns(4).Name = "Check In Time"
+        'CheckedinPatients_Grid.Columns(1).Name = "First Name"
+        'CheckedinPatients_Grid.Columns(2).Name = "Last Name"
+        'CheckedinPatients_Grid.Columns(3).Name = "Check In Date"
+        CheckedinPatients_Grid.Columns(1).Name = "Check In Time"
+        CheckedinPatients_Grid.Columns(2).Name = "Time Elapsed"
 
         Using connection As New SqlConnection(My.Settings.Myconn)
             Dim command As SqlCommand = connection.CreateCommand()
-            command.CommandText = "SELECT dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_1.date1, dbo.TDM_1.time1 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_1.int1"
+            command.CommandText = "SELECT dbo.MSMJ_2.vcmx1, dbo.MSMJ_2.vcmx2, dbo.MSMJ_2.vcmx4, dbo.TDM_1.date1, dbo.TDM_1.time1, dbo.TDM_1.dtime1 FROM dbo.MSMJ_2 INNER JOIN dbo.TDM_1 ON dbo.MSMJ_2.MSMJ_Index = dbo.TDM_1.int1"
 
 
 
@@ -82,9 +133,11 @@ Public Class Consultation_Form
                 Dim dataReader As SqlDataReader =
                  command.ExecuteReader()
                 Do While dataReader.Read()
+                    Checkindatetime = dataReader(5)
 
+                    'Me.CheckedinPatients_Grid.Rows.Add(dataReader(0), dataReader(1), dataReader(2), dataReader(3), dataReader(4))
 
-                    Me.CheckedinPatients_Grid.Rows.Add(dataReader(0), dataReader(1), dataReader(2), dataReader(3), dataReader(4))
+                    Me.CheckedinPatients_Grid.Rows.Add(dataReader(0), dataReader(5), tmrGetTimeSpan(Checkindatetime))
 
                     i = i + 1
 
@@ -246,4 +299,29 @@ Public Class Consultation_Form
 
         End Select
     End Sub
+
+
+    Function ComputeAge(DOB As Date) As String
+
+        Dim yr As Integer = DateDiff(DateInterval.Year, DOB, Now)
+        Dim month As Integer = DateDiff(DateInterval.Month, DOB, Now) Mod 12
+        Dim day As Integer = DateDiff(DateInterval.Day, DOB, Now) Mod 30 - 10
+
+        Dim Result As String
+
+        Result = yr & " Years, " & month & " Months "
+
+        Return Result
+
+
+    End Function
+
+    Public Function tmrGetTimeSpan(ByVal StartTime As Date) As String
+
+
+        Dim tsElapseTime As TimeSpan
+
+        tsElapseTime = Now.Subtract(StartTime)
+        Return String.Format("{0}:{1}:{2}", tsElapseTime.Hours.ToString("00"), tsElapseTime.Minutes.ToString("00"), tsElapseTime.Seconds.ToString("00"))
+    End Function
 End Class

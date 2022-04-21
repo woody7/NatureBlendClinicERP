@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Chief_Complaint_dtst" targetNamespace="http://tempuri.org/Chief_Complaint_dtst.xsd" xmlns:mstns="http://tempuri.org/Chief_Complaint_dtst.xsd" xmlns="http://tempuri.org/Chief_Complaint_dtst.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ClinicERPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClinicERPConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NatureBlendClinicERP.My.MySettings.GlobalReference.Default.ClinicERPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Chief_Complaint_DataTableTableAdapter" GeneratorDataComponentClassName="Chief_Complaint_DataTableTableAdapter" Name="Chief_Complaint_DataTable" UserDataComponentName="Chief_Complaint_DataTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicERPConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TDM_10.vc2, TDM_2.vcmx1, TDM_2.vcmx2, TDM_2.vcmx3, TDM_2.int1, TDM_2.vcmx4
+FROM     TDM_10 INNER JOIN
+                  TDM_2 ON TDM_10.vc2 = TDM_2.vc2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="vc2" DataSetColumn="vc2" />
+              <Mapping SourceColumn="vcmx1" DataSetColumn="vcmx1" />
+              <Mapping SourceColumn="vcmx2" DataSetColumn="vcmx2" />
+              <Mapping SourceColumn="vcmx3" DataSetColumn="vcmx3" />
+              <Mapping SourceColumn="int1" DataSetColumn="int1" />
+              <Mapping SourceColumn="vcmx4" DataSetColumn="vcmx4" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Chief_Complaint_dtst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Chief_Complaint_dtst" msprop:Generator_UserDSName="Chief_Complaint_dtst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Chief_Complaint_DataTable" msprop:Generator_TableClassName="Chief_Complaint_DataTableDataTable" msprop:Generator_TableVarName="tableChief_Complaint_DataTable" msprop:Generator_TablePropName="Chief_Complaint_DataTable" msprop:Generator_RowDeletingName="Chief_Complaint_DataTableRowDeleting" msprop:Generator_RowChangingName="Chief_Complaint_DataTableRowChanging" msprop:Generator_RowEvHandlerName="Chief_Complaint_DataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="Chief_Complaint_DataTableRowDeleted" msprop:Generator_UserTableName="Chief_Complaint_DataTable" msprop:Generator_RowChangedName="Chief_Complaint_DataTableRowChanged" msprop:Generator_RowEvArgName="Chief_Complaint_DataTableRowChangeEvent" msprop:Generator_RowClassName="Chief_Complaint_DataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vc2" msprop:Generator_ColumnVarNameInTable="columnvc2" msprop:Generator_ColumnPropNameInRow="vc2" msprop:Generator_ColumnPropNameInTable="vc2Column" msprop:Generator_UserColumnName="vc2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vcmx1" msprop:Generator_ColumnVarNameInTable="columnvcmx1" msprop:Generator_ColumnPropNameInRow="vcmx1" msprop:Generator_ColumnPropNameInTable="vcmx1Column" msprop:Generator_UserColumnName="vcmx1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vcmx2" msprop:Generator_ColumnVarNameInTable="columnvcmx2" msprop:Generator_ColumnPropNameInRow="vcmx2" msprop:Generator_ColumnPropNameInTable="vcmx2Column" msprop:Generator_UserColumnName="vcmx2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vcmx3" msprop:Generator_ColumnVarNameInTable="columnvcmx3" msprop:Generator_ColumnPropNameInRow="vcmx3" msprop:Generator_ColumnPropNameInTable="vcmx3Column" msprop:Generator_UserColumnName="vcmx3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="int1" msprop:Generator_ColumnVarNameInTable="columnint1" msprop:Generator_ColumnPropNameInRow="int1" msprop:Generator_ColumnPropNameInTable="int1Column" msprop:Generator_UserColumnName="int1" type="xs:int" minOccurs="0" />
+              <xs:element name="vcmx4" msprop:Generator_ColumnVarNameInTable="columnvcmx4" msprop:Generator_ColumnPropNameInRow="vcmx4" msprop:Generator_ColumnPropNameInTable="vcmx4Column" msprop:Generator_UserColumnName="vcmx4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

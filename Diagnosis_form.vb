@@ -75,7 +75,11 @@ Public Class Diagnosis_form
                 'DataGridView1.Columns(1).Width = 150
             End If
 
+
+
         Catch ex As Exception
+          
+            MessageBox.Show(ex.Message)
 
         End Try
 
@@ -100,7 +104,7 @@ Public Class Diagnosis_form
             SQLCmd2.CommandType = CommandType.StoredProcedure 'Setup Command Type
             SQLCmd2.Connection = SQLCon2 'Active Connection
 
-            SQLCmd2.Parameters.Add("vcmx1", SqlDbType.VarChar).Value = ""
+            SQLCmd2.Parameters.Add("vcmx1", SqlDbType.VarChar).Value = Comments_txt.Text
             SQLCmd2.Parameters.Add("vcmx2", SqlDbType.VarChar).Value = ""
             SQLCmd2.Parameters.Add("vcmx3", SqlDbType.VarChar).Value = ""
             SQLCmd2.Parameters.Add("vcmx4", SqlDbType.VarChar).Value = ""
@@ -288,9 +292,9 @@ Public Class Diagnosis_form
         'End Try
         'End If
 
-        DiagnosisListBox.Text = ""
-        ICD10_ListBox.Text = ""
-
+        DiagnosisListBox.Items.Clear()
+        ICD10_ListBox.Items.Clear()
+        Comments_txt.Text = Nothing
     End Sub
 
     Private Sub btnCancel_Click(sender As System.Object, e As System.EventArgs) Handles btnCancel.Click

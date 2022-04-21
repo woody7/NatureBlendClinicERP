@@ -59,10 +59,13 @@
     <Reference Include="MdiTabControl">
       <HintPath>..\Tact1\MdiTabControl.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -139,6 +142,11 @@
     <Compile Include="Chief Complaint.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Chief_Complaint_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Chief_Complaint_dtst.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Connstring.Designer.vb">
       <DependentUpon>Connstring.vb</DependentUpon>
     </Compile>
@@ -156,6 +164,16 @@
     </Compile>
     <Compile Include="Consultation_Form.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptSalesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeptSalesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnoses_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Diagnoses_dtst.xsd</DependentUpon>
     </Compile>
     <Compile Include="Diagnosis_form.Designer.vb">
       <DependentUpon>Diagnosis_form.vb</DependentUpon>
@@ -188,11 +206,21 @@
     <Compile Include="General_Examination_List.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gen_Exam_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gen_Exam_dtst.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HPI.Designer.vb">
       <DependentUpon>HPI.vb</DependentUpon>
     </Compile>
     <Compile Include="HPI.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HPI_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HPI_dtst.xsd</DependentUpon>
     </Compile>
     <Compile Include="HPI_List.Designer.vb">
       <DependentUpon>HPI_List.vb</DependentUpon>
@@ -211,6 +239,16 @@
     </Compile>
     <Compile Include="Investigations.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigations_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Investigations_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Investigations_remarks_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Investigations_remarks_dtst.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -233,6 +271,11 @@
     <Compile Include="Next Appointment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Next_Appt_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Next_Appt_dtst.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Past Medical History List.Designer.vb">
       <DependentUpon>Past Medical History List.vb</DependentUpon>
     </Compile>
@@ -251,10 +294,47 @@
     <Compile Include="PastDiagnosis.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Past_Medical_History_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Past_Medical_History_dtst.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Patient List.Designer.vb">
       <DependentUpon>Patient List.vb</DependentUpon>
     </Compile>
     <Compile Include="Patient List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientLabs.Designer.vb">
+      <DependentUpon>PatientLabs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLabs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientTreatmentPlanList.Designer.vb">
+      <DependentUpon>PatientTreatmentPlanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientTreatmentPlanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Vitals_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Patient_Vitals_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Vitals_dtst.vb">
+      <DependentUpon>Patient_Vitals_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report Forms\DepartmentSaleTracker.Designer.vb">
+      <DependentUpon>DepartmentSaleTracker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report Forms\DepartmentSaleTracker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Forms\Patient Medical Reoport.Designer.vb">
+      <DependentUpon>Patient Medical Reoport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report Forms\Patient Medical Reoport.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Supreme.vb" />
@@ -275,6 +355,16 @@
     </Compile>
     <Compile Include="TreatmentPlan_List.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment_Plan_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Treatment_Plan_dtst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment_Plan_Remarks_dtst.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Treatment_Plan_Remarks_dtst.xsd</DependentUpon>
     </Compile>
     <Compile Include="Vitals_List.Designer.vb">
       <DependentUpon>Vitals_List.vb</DependentUpon>
@@ -368,6 +458,20 @@
     <EmbeddedResource Include="Patient List.resx">
       <DependentUpon>Patient List.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PatientLabs.resx">
+      <DependentUpon>PatientLabs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientTreatmentPlanList.resx">
+      <DependentUpon>PatientTreatmentPlanList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Definitions\DepartmentSaleTracker.rdlc" />
+    <EmbeddedResource Include="Report Definitions\Patient Medical Report.rdlc" />
+    <EmbeddedResource Include="Report Forms\DepartmentSaleTracker.resx">
+      <DependentUpon>DepartmentSaleTracker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Forms\Patient Medical Reoport.resx">
+      <DependentUpon>Patient Medical Reoport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Take Vitals.resx">
       <DependentUpon>Take Vitals.vb</DependentUpon>
     </EmbeddedResource>
@@ -383,6 +487,83 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Chief_Complaint_dtst.xsc">
+      <DependentUpon>Chief_Complaint_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Chief_Complaint_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Chief_Complaint_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Chief_Complaint_dtst.xss">
+      <DependentUpon>Chief_Complaint_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="DeptSalesDataSet.xsc">
+      <DependentUpon>DeptSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeptSalesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeptSalesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeptSalesDataSet.xss">
+      <DependentUpon>DeptSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Diagnoses_dtst.xsc">
+      <DependentUpon>Diagnoses_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Diagnoses_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Diagnoses_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Diagnoses_dtst.xss">
+      <DependentUpon>Diagnoses_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Gen_Exam_dtst.xsc">
+      <DependentUpon>Gen_Exam_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Gen_Exam_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gen_Exam_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Gen_Exam_dtst.xss">
+      <DependentUpon>Gen_Exam_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="HPI_dtst.xsc">
+      <DependentUpon>HPI_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="HPI_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HPI_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="HPI_dtst.xss">
+      <DependentUpon>HPI_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Investigations_dtst.xsc">
+      <DependentUpon>Investigations_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Investigations_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Investigations_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Investigations_dtst.xss">
+      <DependentUpon>Investigations_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Investigations_remarks_dtst.xsc">
+      <DependentUpon>Investigations_remarks_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Investigations_remarks_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Investigations_remarks_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Investigations_remarks_dtst.xss">
+      <DependentUpon>Investigations_remarks_dtst.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -392,10 +573,66 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Next_Appt_dtst.xsc">
+      <DependentUpon>Next_Appt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Next_Appt_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Next_Appt_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Next_Appt_dtst.xss">
+      <DependentUpon>Next_Appt_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Past_Medical_History_dtst.xsc">
+      <DependentUpon>Past_Medical_History_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Past_Medical_History_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Past_Medical_History_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Past_Medical_History_dtst.xss">
+      <DependentUpon>Past_Medical_History_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Patient_Vitals_dtst.xsc">
+      <DependentUpon>Patient_Vitals_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Patient_Vitals_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Patient_Vitals_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Patient_Vitals_dtst.xss">
+      <DependentUpon>Patient_Vitals_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Treatment_Plan_dtst.xsc">
+      <DependentUpon>Treatment_Plan_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Treatment_Plan_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Treatment_Plan_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Treatment_Plan_dtst.xss">
+      <DependentUpon>Treatment_Plan_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Treatment_Plan_Remarks_dtst.xsc">
+      <DependentUpon>Treatment_Plan_Remarks_dtst.xsd</DependentUpon>
+    </None>
+    <None Include="Treatment_Plan_Remarks_dtst.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Treatment_Plan_Remarks_dtst.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Treatment_Plan_Remarks_dtst.xss">
+      <DependentUpon>Treatment_Plan_Remarks_dtst.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\testimage.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
